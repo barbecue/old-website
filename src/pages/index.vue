@@ -21,6 +21,10 @@
       </div>
     </div>
     <div class="py-4">
+      <h1 class="text-2xl text-neutral-600 title">Recently Listened Songs</h1>
+      <SongList/>
+    </div>
+    <div class="py-4">
       <h1 class="text-2xl text-neutral-600 title">Recently Watched Animes</h1>
       <AnimeList/>
     </div>

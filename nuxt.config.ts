@@ -19,6 +19,11 @@ export default defineNuxtConfig({
             display: 'standalone'
         }
     },
+    runtimeConfig: {
+        client_secret: process.env.CLIENT_SECRET,
+        client_id: process.env.CLIENT_ID,
+        refresh_token: process.env.REFRESH_TOKEN
+    },
     app: {
         head: {
             charset: 'utf-8',
