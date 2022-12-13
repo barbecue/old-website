@@ -116,42 +116,42 @@ const technologies = [
         url: 'https://wikipedia.org/wiki/JavaScript',
         external: true,
         image: 'javascript.svg',
-        backgroundColor: 'rgba(175,149,62,0.13)'
+        backgroundColor: '#af953e21'
       },
       {
         title: 'Node.JS',
         url: 'https://nodejs.org/',
         external: true,
         image: 'nodejs.svg',
-        backgroundColor: 'rgba(103,175,62,0.13)'
+        backgroundColor: '#67af3e21'
       },
       {
         title: 'Nuxt.JS',
         url: 'https://nuxt.com/',
         external: true,
         image: 'nuxt.svg',
-        backgroundColor: 'rgba(62,175,125,0.13)'
+        backgroundColor: '#3eaf7d21'
       },
       {
         title: 'Tailwind CSS',
         url: 'https://tailwindcss.com/',
         external: true,
         image: 'tailwind.svg',
-        backgroundColor: 'rgba(62,119,175,0.13)'
+        backgroundColor: '#3e77af21'
       },
       {
         title: 'HTML5',
         url: 'https://wikipedia.org/wiki/HTML5',
         external: true,
         image: 'html5.svg',
-        backgroundColor: 'rgba(225,113,18,0.13)'
+        backgroundColor: '#e1711221'
       },
       {
         title: 'Sass',
         url: 'https://sass-lang.com/',
         external: true,
         image: 'sass.svg',
-        backgroundColor: 'rgba(141,20,168,0.13)'
+        backgroundColor: '#8d14a821'
       },
     ]
   },
