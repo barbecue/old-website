@@ -1,0 +1,139 @@
+// https://nuxt.com/docs/api/configuration/nuxt-config
+export default defineNuxtConfig({
+    components: { global: true, dirs: ['~/components'] },
+    srcDir: 'src/',
+    rootDİr: './',
+    css: ['~/stylesheets/main.css', '@fortawesome/fontawesome-svg-core/styles.css'],
+    modules: ['@nuxt/image-edge', '@nuxtjs/google-fonts', '@kevinmarrec/nuxt-pwa', '@nuxtjs/color-mode'],
+    pwa: {
+        workbox: {
+            enabled: true
+        },
+        manifest: {
+            name: 'tuna.one',
+            lang: 'en',
+            background_color: '#fff',
+            useWebmanifestExtension: false,
+            theme_color: '#171717',
+            start_url: '/',
+            display: 'standalone'
+        }
+    },
+    app: {
+        head: {
+            charset: 'utf-8',
+            viewport: 'width=device-width, initial-scale=1',
+            title: 'tuna.one',
+            link: [
+                {
+                    rel: 'apple-touch-icon',
+                    sizes: '57x57',
+                    href: '/assets/images/meta/apple-icon-57x57.png'
+                },
+                {
+                    rel: 'apple-touch-icon',
+                    sizes: '60x60',
+                    href: '/assets/images/meta/apple-icon-60x60.png'
+                },
+                {
+                    rel: 'apple-touch-icon',
+                    sizes: '72x72',
+                    href: '/assets/images/meta/apple-icon-72x72.png'
+                },
+                {
+                    rel: 'apple-touch-icon',
+                    sizes: '76x76',
+                    href: '/assets/images/meta/apple-icon-76x76.png'
+                },
+                {
+                    rel: 'apple-touch-icon',
+                    sizes: '114x114',
+                    href: '/assets/images/meta/apple-icon-114x114.png'
+                },
+                {
+                    rel: 'apple-touch-icon',
+                    sizes: '120x120',
+                    href: '/assets/images/meta/apple-icon-120x120.png'
+                },
+                {
+                    rel: 'apple-touch-icon',
+                    sizes: '144x144',
+                    href: '/assets/images/meta/apple-icon-144x144.png'
+                },
+                {
+                    rel: 'apple-touch-icon',
+                    sizes: '152x152',
+                    href: '/assets/images/meta/apple-icon-152x152.png'
+                },
+                {
+                    rel: 'apple-touch-icon',
+                    sizes: '180x180',
+                    href: '/assets/images/meta/apple-icon-180x180.png'
+                },
+                {
+                    rel: 'icon',
+                    type: 'image/png',
+                    sizes: '192x192',
+                    href: '/assets/images/meta/android-icon-192x192.png'
+                },
+                {
+                    rel: 'icon',
+                    type: 'image/png',
+                    sizes: '32x32',
+                    href: '/assets/images/meta/favicon-32x32.png'
+                },
+                {
+                    rel: 'icon',
+                    type: 'image/png',
+                    sizes: '96x96',
+                    href: '/assets/images/meta/favicon-96x96.png'
+                },
+                {
+                    rel: 'icon',
+                    type: 'image/png',
+                    sizes: '16x16',
+                    href: '/assets/images/meta/favicon-16x16.png'
+                }
+            ],
+            meta: [
+                { name: 'description', content: '16 years old frontend & backend developer and student from Turkey.' },
+                { name: 'twitter:card', content: 'summary' },
+                { name: 'twitter:site', content: '@b2rbecue' },
+                { name: 'twitter:site', content: '@b2rbecue' },
+                { name: "twitter:title",  content: "tuna.one" },
+                { name: "twitter:description",  content: "16 years old frontend & backend developer and student from Turkey." },
+                { name: "twitter:image",  content: "https://tuna.one/assets/images/tuna.png" },
+                { name: "og:type",  content: "website" },
+                { name: "og:site_name",  content: "tuna.one" },
+                { name: "og:description",  content: "16 years old frontend & backend developer and student from Turkey." },
+                { name: "og:image",  content: "https://tuna.one/assets/images/tuna.png" },
+                { name: "msapplication-TileImage",  content: "#171717" },
+                { name: "msapplication-TileImage",  content: "/assets/images/meta/ms-icon-144x144.png" },
+                { name: "theme-color",  content: "#171717" },
+            ],
+        }
+    },
+    googleFonts: {
+        download: true,
+        preconnect: true,
+        prefetch: true,
+        families: {
+            'Roboto+Mono': true,
+            'Lexend+Deca': true
+        }
+    },
+    colorMode: {
+        preference: 'dark',
+        fallback: 'dark',
+        classSuffix: ''
+    },
+    static: {
+        prefix: false
+    },
+    postcss: {
+        plugins: {
+            tailwindcss: {},
+            autoprefixer: {},
+        },
+    }
+})
