@@ -9,6 +9,9 @@ export default defineNuxtConfig({
         workbox: {
             enabled: true
         },
+        meta: {
+            title: 'Home'
+        },
         manifest: {
             name: 'tuna.one',
             lang: 'en',
@@ -28,7 +31,7 @@ export default defineNuxtConfig({
         head: {
             charset: 'utf-8',
             viewport: 'width=device-width, initial-scale=1',
-            title: 'tuna.one',
+            titleTemplate: '%s - tuna.one',
             link: [
                 {
                     rel: 'apple-touch-icon',

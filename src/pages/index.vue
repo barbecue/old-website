@@ -213,6 +213,11 @@ const technologies = [
 <script>
 
 export default {
-  name: "Index"
+  name: "Index",
+  head() {
+    return {
+      title: 'Home'
+    }
+  }
 }
 </script>
