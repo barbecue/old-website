@@ -6,10 +6,6 @@
         <p class="text-neutral-700 md:text-lg">Hi 👋, my name is Tuna, I am living in Turkey and I am a web developer. I
           building <span class="line-through">lovely</span> websites.</p>
       </div>
-      <div>
-        <nuxt-img width="250px" height="250px" class="select-none w-full transform" draggable="false" oncontextmenu="return false;"
-                  alt="discord" :src="`https://lanyard.cnrad.dev/api/298888568279924746?idleMessage=probably afk.${$colorMode.preference === 'light' ? '&bg=fff&theme=light' : '&bg=141414&theme=dark'}`"/>
-      </div>
     </div>
     <div class="py-4">
       <h1 class="text-2xl text-neutral-600 title">Projects</h1>
