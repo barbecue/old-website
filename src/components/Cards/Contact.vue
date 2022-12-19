@@ -15,7 +15,7 @@ const props = defineProps({
   <a
       :href="`${props.data.url}`"
       :target="`${props.data.external ? '_blank' : '_self' }`"
-      class="flex p-2 border hover:bg-gray-200 dark:hover:bg-neutral-900 cursor-pointer duration-300 border-gray-300 dark:border-neutral-800 rounded-md text-white">
+      class="flex p-2 border hover:bg-gray-200 focus:outline-none dark:hover:bg-neutral-900 cursor-pointer duration-300 border-gray-300 dark:border-neutral-800 rounded-md text-white">
     <div class="flex flex-row items-center space-x-3">
       <div v-if="props.data.image" :style="{ 'background-color' : props.data.backgroundColor }"
            class="bg-opacity-50 p-2 rounded-md">

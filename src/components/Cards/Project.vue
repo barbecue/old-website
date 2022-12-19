@@ -14,7 +14,7 @@ const props = defineProps({
   <a
      :href="`${props.data.url}`"
      :target="`${props.data.external ? '_blank' : '_self' }`"
-     class="flex p-4 border hover:bg-gray-200 dark:hover:bg-neutral-900 cursor-pointer duration-300 border-gray-300 dark:border-neutral-800 rounded-md text-white"
+     class="flex p-4 border hover:bg-gray-200 focus:outline-none dark:hover:bg-neutral-900 cursor-pointer duration-300 border-gray-300 dark:border-neutral-800 rounded-md text-white"
   >
     <div class="flex flex-col space-y-1.5">
       <h1 class="text-lg dark:text-white text-black title">{{ props.data.title }}</h1>
