@@ -2,7 +2,7 @@
 export default defineNuxtConfig({
     components: { global: true, dirs: ['~/components'] },
     srcDir: 'src/',
-    rootDİr: './',
+    rootDir: './',
     css: ['~/stylesheets/main.css', '@fortawesome/fontawesome-svg-core/styles.css'],
     modules: ['@nuxt/image-edge', '@nuxtjs/google-fonts', '@kevinmarrec/nuxt-pwa', '@nuxtjs/color-mode'],
     pwa: {

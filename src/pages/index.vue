@@ -6,6 +6,7 @@
         <p class="text-neutral-700 md:text-lg">Hi 👋, my name is Tuna, I am living in Turkey and I am a web developer. I
           building <span class="line-through">lovely</span> websites.</p>
       </div>
+      <CardsDiscord/>
     </div>
     <div class="py-4">
       <h1 class="text-2xl text-neutral-600 title">Projects</h1>
@@ -18,11 +19,11 @@
     </div>
     <div class="py-4">
       <h1 class="text-2xl text-neutral-600 title">Recently Listened Songs</h1>
-      <SongList/>
+      <LazyListsSongs/>
     </div>
     <div class="py-4">
       <h1 class="text-2xl text-neutral-600 title">Recently Watched Animes</h1>
-      <AnimeList/>
+      <LazyListsAnimes/>
     </div>
     <div class="py-4">
       <h1 class="text-2xl text-neutral-600 title">Technologies</h1>
