@@ -1,10 +1,12 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
+
 export default defineNuxtConfig({
     components: { global: true, dirs: ['~/components'] },
     srcDir: 'src/',
     rootDir: './',
     css: ['~/stylesheets/main.css', '@fortawesome/fontawesome-svg-core/styles.css'],
     modules: ['@nuxt/image-edge', '@nuxtjs/google-fonts', '@kevinmarrec/nuxt-pwa', '@nuxtjs/color-mode'],
+    plugins: ['~/plugins/tooltip.js'],
     pwa: {
         workbox: {
             enabled: true
