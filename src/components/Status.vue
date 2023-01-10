@@ -1,6 +1,7 @@
 <script setup>
 const props = defineProps({
-  status: String
+  status: String,
+  loading: Boolean
 });
 
 const Status = {
@@ -17,7 +18,7 @@ const colors = {
 }
 </script>
 <template>
-    <div v-tooltip="Status[props.status]" :class="[colors[props.status]]" class="w-4 mr-3 ring-4 ring-neutral-200 dark:ring-neutral-900 h-4 absolute border rounded-full"></div>
+    <div v-tooltip="Status[props.status]" :class="[colors[props.status], loading ? 'animate-pulse' : '' ]" class="w-4 mr-3 ring-4 ring-neutral-200 dark:ring-neutral-900 h-4 absolute border rounded-full"></div>
 </template>
 
 <script>
