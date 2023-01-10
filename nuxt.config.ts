@@ -27,7 +27,8 @@ export default defineNuxtConfig({
     runtimeConfig: {
         client_secret: process.env.CLIENT_SECRET,
         client_id: process.env.CLIENT_ID,
-        refresh_token: process.env.REFRESH_TOKEN
+        refresh_token: process.env.REFRESH_TOKEN,
+        mal_username: process.env.MAL_USERNAME
     },
     app: {
         head: {
