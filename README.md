@@ -1,5 +1,5 @@
 # Barbecue's Website 
-![example](https://bbq.should-be.legal/4p2Mm42.png)
+![example](https://bbq.should-be.legal/3AAe9o8.png)
 
 Getting Started
 
