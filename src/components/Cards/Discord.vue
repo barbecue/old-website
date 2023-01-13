@@ -1,6 +1,6 @@
 <script setup>
 const runtimeConfig = useRuntimeConfig()
-const { data, pending, error, refresh } = await useFetch(() => `https://api.lanyard.rest/v1/users/${runtimeConfig.public.discord}`);
+const { data, pending, error, refresh } = await useFetch(() => `https://api.lanyard.rest/v1/users/${runtimeConfig.public.discord_id}`);
 </script>
 <template>
   <div class="bg-neutral-200 dark:bg-neutral-900 rounded-md p-5 px-32 flex flex-col items-center space-y-2">
