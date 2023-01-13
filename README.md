@@ -1,5 +1,5 @@
 # Barbecue's Website 
-![example](http://url/to/img.png)
+![example](https://bbq.should-be.legal/4p2Mm42.png)
 
 Getting Started
 
