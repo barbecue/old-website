@@ -28,7 +28,10 @@ export default defineNuxtConfig({
         client_secret: process.env.CLIENT_SECRET,
         client_id: process.env.CLIENT_ID,
         refresh_token: process.env.REFRESH_TOKEN,
-        mal_username: process.env.MAL_USERNAME
+        mal_username: process.env.MAL_USERNAME,
+        public: {
+            discord_id: process.env.DISCORD_ID
+        }
     },
     app: {
         head: {
