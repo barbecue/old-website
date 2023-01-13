@@ -1,3 +1,6 @@
+# Barbecue's Website 
+![example](http://url/to/img.png)
+
 Getting Started
 
 - You will need to download Node.js from https://nodejs.org/en/.

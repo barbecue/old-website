@@ -13,7 +13,7 @@
           </div>
         </div>
       </a>
-    <button @click="refresh()" aria-label="Refresh Anime List" v-if="error" class="p-2 focus:outline-none px-6 bg-neutral-200 hover:bg-neutral-300 transition duration-300 dark:Hover-bg-neutral-900 dark:bg-neutral-800 dark:text-neutral-400 dark:hover:text-white text-neutral-600 hover:text-black dark:hover space-x-2.5 items-center justify-center flex flex-row rounded-md">
+    <button @click="refresh()" aria-label="Refresh Anime List" v-else class="p-2 focus:outline-none px-6 bg-neutral-200 hover:bg-neutral-300 transition duration-300 dark:Hover-bg-neutral-900 dark:bg-neutral-800 dark:text-neutral-400 dark:hover:text-white text-neutral-600 hover:text-black dark:hover space-x-2.5 items-center justify-center flex flex-row rounded-md">
       <client-only>
         <font-awesome-icon :icon="['fas', 'arrows-rotate']"/>
       </client-only>
