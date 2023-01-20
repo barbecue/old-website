@@ -11,6 +11,7 @@ I have been developing myself in the frontend/backend field for almost 3 years a
     - Your projects, a self-introduction text, known languages, programs etc., contact information.
 - Spotify API to display your recently listened songs.
 - MyAnimeList API to display your recenlty watched animes.
+- Light & Dark theme support.
 
 ### 📝 To-Do
 - [ ] GitHub Repositories section.
