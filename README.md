@@ -20,6 +20,7 @@ I have been developing myself in the frontend/backend field for almost 3 years a
 - [ ] Static Blog.
 - [ ] A page where I can put my own small tools.
 - [ ] The 'Support this website on GitHub' message that appears when you first enter the site.
+- [ ] Language Support
 
 
 ### 🔧 Getting Started
