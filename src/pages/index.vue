@@ -71,7 +71,7 @@ const projects = [
   {
     title: 'This Website',
     url: 'https://github.com/barbecue/website',
-    description: 'Please don't forget to star!',
+    description: 'Please don\'t forget to star!',
     external: true
   }
 ]
