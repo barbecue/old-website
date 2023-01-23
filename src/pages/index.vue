@@ -67,6 +67,12 @@ const projects = [
     url: 'https://discord.com/invite/atmosfer',
     description: 'A platform where you can get updates and news about Discord in advance.',
     external: true
+  },
+  {
+    title: 'This Website',
+    url: 'https://github.com/barbecue/website',
+    description: 'Please don't forget to star!',
+    external: true
   }
 ]
 
