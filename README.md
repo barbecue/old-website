@@ -22,6 +22,14 @@ I have been developing myself in the frontend/backend field for almost 3 years a
 - [ ] The 'Support this website on GitHub' message that appears when you first enter the site.
 - [ ] Language Support
 
+### 🌐 Changing Favicon
+- Create your favicon files using [Favicon Generator](https://www.favicon-generator.org/).
+- Replace files in `src/public/assets/images/meta`.
+- Replace manifest.json in `src/public/assets`.
+- Replace icon with your icon.
+
+### ♻️ Changing Meta Tags
+You can update meta tags on `nuxt.config.ts`.
 
 ### 🔧 Getting Started
 
