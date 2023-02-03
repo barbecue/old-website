@@ -1,4 +1,7 @@
 ## 🍖 Barbecue's Website 
+![Vercel](https://vercelbadge.vercel.app/api/barbecue/website)
+![Discord](https://img.shields.io/discord/924819759785213953?logo=discord)
+
 <p align="center">
     <img src="example.png" alt="Example image of Website." />
 </p>
