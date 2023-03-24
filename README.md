@@ -16,7 +16,6 @@ I have been developing myself in the frontend/backend field for almost 3 years a
 - Spotify API to display your recently listened songs.
 - MyAnimeList API to display your recenlty watched animes.
 - Light & Dark theme support.
-- PWA Support.
 
 ### 📝 To-Do
 
@@ -27,6 +26,7 @@ I have been developing myself in the frontend/backend field for almost 3 years a
 - [ ] The 'Support this website on GitHub' message that appears when you first enter the site.
 - [ ] Cache for Anime and Song List.
 - [ ] Language Support
+- [ ] PWA Support.
 
 ### 🌐 Changing Favicon
 
