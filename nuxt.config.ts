@@ -8,6 +8,7 @@ export default defineNuxtConfig({
   css: ["~/stylesheets/main.css"],
   modules: [
     "nuxt-icon",
+    "@pinia/nuxt",
     "@nuxt/image-edge",
     "@nuxtjs/google-fonts",
     "@nuxtjs/color-mode",
@@ -150,9 +151,6 @@ export default defineNuxtConfig({
     preference: "dark",
     fallback: "dark",
     classSuffix: "",
-  },
-  static: {
-    prefix: false,
   },
   postcss: {
     plugins: {
