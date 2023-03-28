@@ -1,14 +1,14 @@
 <template>
   <div
-    class="relative max-w-7xl mx-auto flex items-center justify-between px-12 md:px-24 py-7"
+    class="relative mx-auto flex max-w-7xl items-center justify-between px-12 py-7 md:px-24"
   >
     <div class="flex flex-row items-center justify-center space-x-5">
-      <h1 class="text-black dark:text-white text-4xl title">tuna.one</h1>
+      <h1 class="title text-4xl text-black dark:text-white">tuna.one</h1>
     </div>
     <div class="flex flex-row space-x-3.5">
       <button
         aria-label="theme-switch"
-        class="focus:outline-none p-2 px-2.5 flex justify-center items-center transition-colors bg-neutral-300 dark:bg-neutral-900 rounded-md"
+        class="flex items-center justify-center rounded-md bg-neutral-300 p-2 px-2.5 transition-colors focus:outline-none dark:bg-neutral-900"
         @click="
           $colorMode.preference === 'light'
             ? ($colorMode.preference = 'dark')
@@ -16,7 +16,7 @@
         "
       >
         <Icon
-          class="text-neutral-500 text-lg hover:text-black dark:hover:text-white duration-300"
+          class="text-lg text-neutral-500 duration-300 hover:text-black dark:hover:text-white"
           :name="
             $colorMode.preference === 'dark'
               ? 'material-symbols:light-mode'
@@ -27,9 +27,3 @@
     </div>
   </div>
 </template>
-
-<script>
-export default {
-  name: "NavBar.vue",
-};
-</script>

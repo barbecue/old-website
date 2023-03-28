@@ -7,11 +7,12 @@ if (error) {
   refresh();
 }
 </script>
+
 <template>
   <div
-    class="bg-neutral-200 dark:bg-neutral-900 rounded-md p-5 px-32 flex flex-col items-center space-y-2"
+    class="flex flex-col items-center space-y-2 rounded-md bg-neutral-200 p-5 px-32 dark:bg-neutral-900"
   >
-    <div v-if="!pending && !error" class="flex justify-end items-end">
+    <div v-if="!pending && !error" class="flex items-end justify-end">
       <nuxt-img
         v-if="data.data.discord_user.avatar"
         draggable="false"
@@ -21,26 +22,26 @@ if (error) {
           data.data.discord_user.avatar.startsWith('a_') ? 'gif' : 'webp'
         }?size=128`"
         :alt="`${data.data.discord_user.username}#${data.data.discord_user.discriminator}`"
-        class="relative w-24 h-24 rounded-full"
+        class="relative h-24 w-24 rounded-full"
       ></nuxt-img>
       <nuxt-img
         v-else
         draggable="false"
         src="https://cdn.discordapp.com/embed/avatars/5.png"
         :alt="`${data.data.discord_user.username}#${data.data.discord_user.discriminator}`"
-        class="relative w-24 h-24 rounded-full"
+        class="relative h-24 w-24 rounded-full"
       ></nuxt-img>
-      <Status :status="data.data.discord_status" />
+      <DiscordStatus :status="data.data.discord_status" />
     </div>
-    <div v-else class="flex justify-end items-end">
+    <div v-else class="flex items-end justify-end">
       <div
-        class="relative bg-neutral-300 dark:bg-neutral-800 animate-pulse w-24 h-24 rounded-full"
+        class="relative h-24 w-24 animate-pulse rounded-full bg-neutral-300 dark:bg-neutral-800"
       ></div>
-      <Status :loading="true" :status="'offline'" />
+      <DiscordStatus :loading="true" :status="'offline'" />
     </div>
     <h1
       v-if="!pending && !error"
-      class="title text-neutral-800 dark:text-neutral-200 text-lg"
+      class="title text-lg text-neutral-800 dark:text-neutral-200"
     >
       {{ data.data.discord_user.username }}#{{
         data.data.discord_user.discriminator
@@ -48,13 +49,7 @@ if (error) {
     </h1>
     <div
       v-else
-      class="w-24 h-6 bg-neutral-300 animate-pulse rounded-md dark:bg-neutral-800"
+      class="h-6 w-24 animate-pulse rounded-md bg-neutral-300 dark:bg-neutral-800"
     ></div>
   </div>
 </template>
-
-<script>
-export default {
-  name: "Discord",
-};
-</script>

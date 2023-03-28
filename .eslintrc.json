@@ -1,0 +1,29 @@
+{
+    "root": true,
+    "parser": "vue-eslint-parser",
+    "parserOptions": {
+      "sourceType": "module",
+      "requireConfigFile": false,
+      "babelOptions": {
+        "presets": ["@nuxt/babel-preset-app"]
+      }
+    },
+    "extends": ["@nuxtjs/eslint-config-typescript", "prettier"],
+    "plugins": ["prettier"],
+    "rules": {
+      "prettier/prettier": [
+        "error",
+        {
+            "endOfLine": "auto"
+        }
+      ],
+      "camelcase": "off",
+      "@typescript-eslint/no-unused-vars": "off",
+      "vue/multi-word-component-names": "off",
+      "new-cap": "off",
+      "no-unused-vars": "off",
+      "no-unused-expressions": "off",
+      "arrow-body-style": "off",
+      "prefer-arrow-callback": "off"
+    }
+}

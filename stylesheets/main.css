@@ -2,12 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-
-
 html, body {
     font-family: 'Roboto Mono', sans-serif;
 }
-
 
 .title {
     font-family: 'Lexend Deca', 'Roboto Mono', sans-serif;

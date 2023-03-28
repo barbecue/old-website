@@ -1,7 +1,6 @@
 ## 🍖 Barbecue's Website
 
-![Vercel](https://vercelbadge.vercel.app/api/barbecue/website)
-![Discord](https://img.shields.io/discord/924819759785213953?logo=discord)
+![Vercel](https://vercelbadge.vercel.app/api/barbecue/website) ![Discord](https://img.shields.io/discord/924819759785213953?logo=discord)
 
 <p align="center">
     <img src="example.png" alt="Example image of Website." />
@@ -23,7 +22,7 @@ I have been developing myself in the frontend/backend field for almost 3 years a
 - [ ] Real-time discord playing status.
 - [ ] Static Blog.
 - [ ] A page where I can put my own small tools.
-- [ ] The 'Support this website on GitHub' message that appears when you first enter the site.
+- [x] The 'Support this website on GitHub' message that appears when you first enter the site.
 - [ ] Cache for Anime and Song List.
 - [ ] Language Support
 - [ ] PWA Support.

@@ -182,12 +182,12 @@ const technologies = [
 </script>
 
 <template>
-  <div class="relative max-w-7xl mx-auto items-center px-12 md:px-24">
+  <div class="relative mx-auto max-w-7xl items-center px-12 md:px-24">
     <div
-      class="flex flex-col md:flex-row justify-between items-center md:space-x-12 py-6 md:py-12"
+      class="flex flex-col items-center justify-between py-6 md:flex-row md:space-x-12 md:py-12"
     >
-      <div class="py-12 flex flex-col space-y-2.5">
-        <h1 class="text-2xl md:text-3xl text-black dark:text-white title">
+      <div class="flex flex-col space-y-2.5 py-12">
+        <h1 class="title text-2xl text-black dark:text-white md:text-3xl">
           Full-Stack web developer.
         </h1>
         <p class="text-neutral-700 md:text-lg">
@@ -195,12 +195,12 @@ const technologies = [
           development.
         </p>
       </div>
-      <Discord />
+      <DiscordCard />
     </div>
     <div class="py-4">
-      <h1 class="text-2xl text-neutral-600 title">Projects I am working on</h1>
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-4 mt-4">
-        <Project
+      <h1 class="title text-2xl text-neutral-600">Projects I am working on</h1>
+      <div class="mt-4 grid grid-cols-1 gap-5 md:grid-cols-2 md:gap-4">
+        <ProjectCard
           v-for="project in projects"
           :key="project.title"
           :data="project"
@@ -208,23 +208,23 @@ const technologies = [
       </div>
     </div>
     <div class="py-4">
-      <h1 class="text-2xl text-neutral-600 title">Recently Listened Songs</h1>
-      <Songs />
+      <h1 class="title text-2xl text-neutral-600">Recently Listened Songs</h1>
+      <SongList />
     </div>
     <div class="py-4">
-      <h1 class="text-2xl text-neutral-600 title">Recently Watched Animes</h1>
-      <Animes />
+      <h1 class="title text-2xl text-neutral-600">Recently Watched Animes</h1>
+      <AnimeList />
     </div>
     <div class="py-4">
-      <h1 class="text-2xl text-neutral-600 title">Technologies</h1>
+      <h1 class="title text-2xl text-neutral-600">Technologies</h1>
       <div
         v-for="category in technologies"
         :key="category.title.toLowerCase()"
-        class="flex flex-col space-y-3 mt-6 rounded-md"
+        class="mt-6 flex flex-col space-y-3 rounded-md"
       >
         <h1 class="text-neutral-700">{{ category.title }}</h1>
-        <div class="grid grid-cols-1 md:grid-cols-4 gap-5 md:gap-4 mt-4">
-          <Skill
+        <div class="mt-4 grid grid-cols-1 gap-5 md:grid-cols-4 md:gap-4">
+          <SkillCard
             v-for="item in category.items"
             :key="item.title"
             :data="item"
@@ -234,9 +234,9 @@ const technologies = [
       </div>
     </div>
     <div class="py-4">
-      <h1 class="text-2xl text-neutral-600 title">Contact</h1>
-      <div class="grid grid-cols-1 md:grid-cols-4 gap-5 md:gap-4 mt-4">
-        <Contact
+      <h1 class="title text-2xl text-neutral-600">Contact</h1>
+      <div class="mt-4 grid grid-cols-1 gap-5 md:grid-cols-4 md:gap-4">
+        <ContactCard
           v-for="contact in contacts"
           :key="contact.title"
           :data="contact"

@@ -5,25 +5,34 @@
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "lint": "eslint .",
+    "lint:fix": "eslint ./**/**/*.vue --fix"
   },
   "devDependencies": {
+    "@nuxt/babel-preset-app": "^2.16.3",
+    "@nuxt/eslint-config": "^0.1.1",
     "@nuxt/image-edge": "^1.0.0-27840416.dc1ed65",
     "@nuxtjs/color-mode": "^3.2.0",
+    "@nuxtjs/eslint-config-typescript": "^12.0.0",
+    "@nuxtjs/eslint-module": "^4.0.2",
     "@nuxtjs/google-fonts": "^3.0.0-1",
     "autoprefixer": "^10.4.13",
+    "core-js": "3",
     "dotenv": "^16.0.3",
+    "eslint": "^8.36.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-prettier": "^4.2.1",
     "floating-vue": "^2.0.0-beta.20",
     "mal-scraper": "^2.12.0",
     "nuxt": "^3.2.2",
     "nuxt-icon": "^0.3.3",
     "postcss": "^8.4.19",
+    "prettier": "^2.8.7",
+    "prettier-plugin-tailwindcss": "^0.2.5",
     "spotify-web-api-node": "^5.0.2",
-    "tailwindcss": "^3.2.7"
+    "tailwindcss": "^3.2.7",
+    "vue-eslint-parser": "^9.1.0"
   },
-  "dependencies": {
-    "@nuxt/kit": "3.2.3",
-    "@pinia/nuxt": "^0.4.7",
-    "pinia": "^2.0.33"
-  }
+  "dependencies": {}
 }

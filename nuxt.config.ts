@@ -7,8 +7,8 @@ export default defineNuxtConfig({
   components: ["~/components", "~/components/Cards", "~/components/Lists"],
   css: ["~/stylesheets/main.css"],
   modules: [
+    "@nuxtjs/eslint-module",
     "nuxt-icon",
-    "@pinia/nuxt",
     "@nuxt/image-edge",
     "@nuxtjs/google-fonts",
     "@nuxtjs/color-mode",
@@ -147,6 +147,7 @@ export default defineNuxtConfig({
       "Lexend+Deca": true,
     },
   },
+  eslint: {},
   colorMode: {
     preference: "dark",
     fallback: "dark",
