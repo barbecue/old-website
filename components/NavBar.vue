@@ -3,7 +3,7 @@
     class="relative mx-auto flex max-w-7xl items-center justify-between px-12 py-7 md:px-24"
   >
     <div class="flex flex-row items-center justify-center space-x-5">
-      <h1 class="title text-4xl text-black dark:text-white">tuna.one</h1>
+      <span class="title text-4xl text-black dark:text-white">tuna.one</span>
     </div>
     <div class="flex flex-row space-x-3.5">
       <button

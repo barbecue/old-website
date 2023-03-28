@@ -187,9 +187,9 @@ const technologies = [
       class="flex flex-col items-center justify-between py-6 md:flex-row md:space-x-12 md:py-12"
     >
       <div class="flex flex-col space-y-2.5 py-12">
-        <h1 class="title text-2xl text-black dark:text-white md:text-3xl">
+        <span class="title text-2xl text-black dark:text-white md:text-3xl">
           Full-Stack web developer.
-        </h1>
+        </span>
         <p class="text-neutral-700 md:text-lg">
           Hello. My name is Tuna and I'm 17 years old. I'm interested in web
           development.
@@ -198,7 +198,9 @@ const technologies = [
       <DiscordCard />
     </div>
     <div class="py-4">
-      <h1 class="title text-2xl text-neutral-600">Projects I am working on</h1>
+      <span class="title text-2xl text-neutral-600"
+        >Projects I am working on</span
+      >
       <div class="mt-4 grid grid-cols-1 gap-5 md:grid-cols-2 md:gap-4">
         <ProjectCard
           v-for="project in projects"
@@ -208,21 +210,25 @@ const technologies = [
       </div>
     </div>
     <div class="py-4">
-      <h1 class="title text-2xl text-neutral-600">Recently Listened Songs</h1>
+      <span class="title text-2xl text-neutral-600"
+        >Recently Listened Songs</span
+      >
       <SongList />
     </div>
     <div class="py-4">
-      <h1 class="title text-2xl text-neutral-600">Recently Watched Animes</h1>
+      <span class="title text-2xl text-neutral-600"
+        >Recently Watched Animes</span
+      >
       <AnimeList />
     </div>
     <div class="py-4">
-      <h1 class="title text-2xl text-neutral-600">Technologies</h1>
+      <span class="title text-2xl text-neutral-600">Technologies</span>
       <div
         v-for="category in technologies"
         :key="category.title.toLowerCase()"
         class="mt-6 flex flex-col space-y-3 rounded-md"
       >
-        <h1 class="text-neutral-700">{{ category.title }}</h1>
+        <span class="text-neutral-700">{{ category.title }}</span>
         <div class="mt-4 grid grid-cols-1 gap-5 md:grid-cols-4 md:gap-4">
           <SkillCard
             v-for="item in category.items"
@@ -234,7 +240,7 @@ const technologies = [
       </div>
     </div>
     <div class="py-4">
-      <h1 class="title text-2xl text-neutral-600">Contact</h1>
+      <span class="title text-2xl text-neutral-600">Contact</span>
       <div class="mt-4 grid grid-cols-1 gap-5 md:grid-cols-4 md:gap-4">
         <ContactCard
           v-for="contact in contacts"

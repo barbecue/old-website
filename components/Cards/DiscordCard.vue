@@ -10,9 +10,12 @@ if (error) {
 
 <template>
   <div
-    class="flex flex-col items-center space-y-2 rounded-md bg-neutral-200 p-5 px-32 dark:bg-neutral-900"
+    class="flex w-full flex-col items-center space-y-2 rounded-md bg-neutral-200 p-5 px-32 dark:bg-neutral-900 md:w-auto"
   >
-    <div v-if="!pending && !error" class="flex items-end justify-end">
+    <div
+      v-if="!pending && !error"
+      class="flex w-max items-end justify-end md:w-auto"
+    >
       <nuxt-img
         v-if="data.data.discord_user.avatar"
         draggable="false"
@@ -39,14 +42,14 @@ if (error) {
       ></div>
       <DiscordStatus :loading="true" :status="'offline'" />
     </div>
-    <h1
+    <span
       v-if="!pending && !error"
       class="title text-lg text-neutral-800 dark:text-neutral-200"
     >
       {{ data.data.discord_user.username }}#{{
         data.data.discord_user.discriminator
       }}
-    </h1>
+    </span>
     <div
       v-else
       class="h-6 w-24 animate-pulse rounded-md bg-neutral-300 dark:bg-neutral-800"

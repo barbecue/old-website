@@ -29,7 +29,9 @@ const props = defineProps<{
           class="h-7 w-7"
         ></Icon>
       </div>
-      <h1 class="text-lg text-black dark:text-white">{{ props.data.title }}</h1>
+      <span class="text-lg text-black dark:text-white">{{
+        props.data.title
+      }}</span>
     </div>
   </nuxt-link>
 </template>

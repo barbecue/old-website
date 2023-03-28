@@ -28,17 +28,17 @@ if (error) {
           :src="`${song.image}`"
         ></nuxt-img>
         <div class="flex w-36 flex-col break-all">
-          <h1
+          <span
             class="title truncate text-center text-neutral-700 dark:text-neutral-400 md:text-left"
           >
             {{ song.name }}
-          </h1>
+          </span>
           <div class="flex flex-col space-y-0.5">
-            <h1
+            <span
               class="title w-36 truncate break-keep text-center text-sm text-neutral-400 dark:text-neutral-200 md:text-left"
             >
               {{ song.artists[0].name }}
-            </h1>
+            </span>
           </div>
         </div>
       </nuxt-link>

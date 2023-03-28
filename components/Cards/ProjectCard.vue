@@ -16,9 +16,9 @@ const props = defineProps<{
     class="flex cursor-pointer rounded-md border border-gray-300 p-4 text-white duration-300 hover:bg-gray-200 focus:outline-none dark:border-neutral-800 dark:hover:bg-neutral-900"
   >
     <div class="flex flex-col space-y-1.5">
-      <h1 class="title text-lg text-black dark:text-white">
+      <span class="title text-lg text-black dark:text-white">
         {{ props.data.title }}
-      </h1>
+      </span>
       <p
         class="w-60 truncate text-[13px] text-neutral-600 md:w-11/12 md:overflow-visible md:text-clip md:whitespace-normal"
       >

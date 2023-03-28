@@ -28,25 +28,25 @@ if (error) {
           :src="`${anime.animeImagePath}`"
         ></nuxt-img>
         <div class="flex w-36 flex-col break-all">
-          <h1
+          <span
             class="title truncate text-center text-neutral-700 dark:text-neutral-400 md:text-left"
           >
             {{ anime.animeTitle }}
-          </h1>
+          </span>
           <div class="flex flex-col space-y-0.5">
-            <h1
+            <span
               class="title break-keep text-center text-sm text-neutral-400 dark:text-neutral-200 md:text-left"
             >
               {{ anime.score }}/10 Score
-            </h1>
-            <h1
+            </span>
+            <span
               class="title break-keep text-center text-sm text-neutral-400 dark:text-neutral-200 md:text-left"
             >
               {{ anime.numWatchedEpisodes }}/{{
                 anime.animeNumEpisodes === 0 ? "?" : anime.animeNumEpisodes
               }}
               Epsiodes Watched
-            </h1>
+            </span>
           </div>
         </div>
       </nuxt-link>
