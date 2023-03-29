@@ -24,7 +24,7 @@ if (error) {
           format="webp"
           quality="100"
           :alt="anime.animeTitle"
-          class="h-42 w-36 transform select-none rounded-md transition duration-300"
+          class="h-52 w-36 transform select-none rounded-md transition duration-300"
           :src="`${anime.animeImagePath}`"
         ></nuxt-img>
         <div class="flex w-36 flex-col break-all">

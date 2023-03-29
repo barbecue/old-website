@@ -11,6 +11,7 @@
   },
   "devDependencies": {
     "@nuxt/babel-preset-app": "^2.16.3",
+    "@nuxt/content": "^2.5.2",
     "@nuxt/eslint-config": "^0.1.1",
     "@nuxt/image-edge": "^1.0.0-27840416.dc1ed65",
     "@nuxtjs/color-mode": "^3.2.0",
@@ -27,11 +28,11 @@
     "mal-scraper": "^2.12.0",
     "nuxt": "^3.2.2",
     "nuxt-icon": "^0.3.3",
+    "nuxt-windicss": "^2.6.0",
     "postcss": "^8.4.19",
     "prettier": "^2.8.7",
     "prettier-plugin-tailwindcss": "^0.2.5",
     "spotify-web-api-node": "^5.0.2",
-    "tailwindcss": "^3.2.7",
     "vue-eslint-parser": "^9.1.0"
   },
   "dependencies": {}

@@ -16,7 +16,7 @@
         "
       >
         <Icon
-          class="text-lg text-neutral-500 duration-300 hover:text-black dark:hover:text-white"
+          class="text-lg text-neutral-500 duration-300 hover:text-neutral-800 dark:hover:text-white"
           :name="
             $colorMode.preference === 'dark'
               ? 'material-symbols:light-mode'

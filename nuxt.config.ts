@@ -7,6 +7,7 @@ export default defineNuxtConfig({
   components: ["~/components", "~/components/Cards", "~/components/Lists"],
   css: ["~/stylesheets/main.css"],
   modules: [
+    "nuxt-windicss",
     "@nuxtjs/eslint-module",
     "nuxt-icon",
     "@nuxt/image-edge",
@@ -155,11 +156,5 @@ export default defineNuxtConfig({
     preference: "dark",
     fallback: "dark",
     classSuffix: "",
-  },
-  postcss: {
-    plugins: {
-      tailwindcss: {},
-      autoprefixer: {},
-    },
   },
 });
