@@ -100,7 +100,7 @@ export default defineNuxtConfig({
         {
           name: "description",
           content:
-            "16 years old frontend & backend developer and student from Turkey.",
+            "17 years old frontend & backend developer and student from Turkey.",
         },
         { name: "twitter:card", content: "summary" },
         { name: "twitter:site", content: "@b2rbecue" },
@@ -109,7 +109,7 @@ export default defineNuxtConfig({
         {
           name: "twitter:description",
           content:
-            "16 years old frontend & backend developer and student from Turkey.",
+            "17 years old frontend & backend developer and student from Turkey.",
         },
         {
           name: "twitter:image",
@@ -120,7 +120,7 @@ export default defineNuxtConfig({
         {
           name: "og:description",
           content:
-            "16 years old frontend & backend developer and student from Turkey.",
+            "17 years old frontend & backend developer and student from Turkey.",
         },
         {
           name: "og:image",
