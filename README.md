@@ -20,7 +20,7 @@ I have been developing myself in the frontend/backend field for almost 3 years a
 
 - [ ] GitHub Repositories section.
 - [ ] Real-time discord playing status.
-- [ ] Static Blog.
+- [x] Static Blog.
 - [ ] A page where I can put my own small tools.
 - [x] The 'Support this website on GitHub' message that appears when you first enter the site.
 - [ ] Cache for Anime and Song List.

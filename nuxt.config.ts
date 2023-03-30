@@ -1,4 +1,5 @@
 import dotenv from "dotenv";
+import Time from "reading-time";
 dotenv.config();
 const dev = process.env.NODE_ENV !== "production";
 
@@ -7,23 +8,15 @@ export default defineNuxtConfig({
   components: ["~/components", "~/components/Cards", "~/components/Lists"],
   css: ["~/stylesheets/main.css"],
   modules: [
-    "nuxt-windicss",
-    "@nuxtjs/eslint-module",
-    "nuxt-icon",
     "@nuxt/image-edge",
+    "@nuxt/content",
+    "@nuxtjs/eslint-module",
     "@nuxtjs/google-fonts",
     "@nuxtjs/color-mode",
+    "nuxt-windicss",
+    "nuxt-icon",
   ],
   plugins: ["~/plugins/tooltip"],
-  runtimeConfig: {
-    client_secret: process.env.CLIENT_SECRET,
-    client_id: process.env.CLIENT_ID,
-    refresh_token: process.env.REFRESH_TOKEN,
-    mal_username: process.env.MAL_USERNAME,
-    public: {
-      discord_id: process.env.DISCORD_ID,
-    },
-  },
   app: {
     head: {
       charset: "utf-8",
@@ -142,16 +135,36 @@ export default defineNuxtConfig({
       ],
     },
   },
+  /*
+    ENVIROMENT VARIABLES
+  */
+  runtimeConfig: {
+    client_secret: process.env.CLIENT_SECRET,
+    client_id: process.env.CLIENT_ID,
+    refresh_token: process.env.REFRESH_TOKEN,
+    mal_username: process.env.MAL_USERNAME,
+    public: {
+      discord_id: process.env.DISCORD_ID,
+    },
+  },
+  /*
+    MODULE CONFIGURATIONS
+  */
+  content: {
+    markdown: {
+      remarkPlugins: ["remark-reading-time"],
+    },
+  },
   googleFonts: {
     download: true,
     preconnect: true,
     prefetch: true,
     families: {
+      Poppins: true,
       "Roboto+Mono": true,
       "Lexend+Deca": true,
     },
   },
-  eslint: {},
   colorMode: {
     preference: "dark",
     fallback: "dark",

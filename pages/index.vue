@@ -187,7 +187,7 @@ const technologies = [
       class="flex flex-col items-center justify-between py-6 md:flex-row md:space-x-12 md:py-12"
     >
       <div class="flex flex-col space-y-2.5 py-12">
-        <span class="title text-2xl text-black dark:text-white md:text-3xl">
+        <span class="text-2xl text-black dark:text-white md:text-3xl">
           Full-Stack web developer.
         </span>
         <p class="text-neutral-700 md:text-lg">
@@ -198,9 +198,7 @@ const technologies = [
       <DiscordCard />
     </div>
     <div class="py-4">
-      <span class="title text-2xl text-neutral-600"
-        >Projects I am working on</span
-      >
+      <span class="text-2xl text-neutral-600">Projects I am working on</span>
       <div class="mt-4 grid grid-cols-1 gap-5 md:grid-cols-2 md:gap-4">
         <ProjectCard
           v-for="project in projects"
@@ -210,19 +208,19 @@ const technologies = [
       </div>
     </div>
     <div class="py-4">
-      <span class="title text-2xl text-neutral-600"
-        >Recently Listened Songs</span
-      >
+      <span class="text-2xl text-neutral-600">Recently Posted Articles</span>
+      <BlogList />
+    </div>
+    <div class="py-4">
+      <span class="text-2xl text-neutral-600">Recently Listened Songs</span>
       <SongList />
     </div>
     <div class="py-4">
-      <span class="title text-2xl text-neutral-600"
-        >Recently Watched Animes</span
-      >
+      <span class="text-2xl text-neutral-600">Recently Watched Animes</span>
       <AnimeList />
     </div>
     <div class="py-4">
-      <span class="title text-2xl text-neutral-600">Technologies</span>
+      <span class="text-2xl text-neutral-600">Technologies</span>
       <div
         v-for="category in technologies"
         :key="category.title.toLowerCase()"
@@ -240,7 +238,7 @@ const technologies = [
       </div>
     </div>
     <div class="py-4">
-      <span class="title text-2xl text-neutral-600">Contact</span>
+      <span class="text-2xl text-neutral-600">Contact</span>
       <div class="mt-4 grid grid-cols-1 gap-5 md:grid-cols-4 md:gap-4">
         <ContactCard
           v-for="contact in contacts"
