@@ -9,7 +9,21 @@ module.exports = {
   ],
   darkMode: "class",
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        poppins: ["Poppins", "sans-serif"],
+        roboto: ["Roboto Mono", "sans-serif"],
+        lexend: ["Lexend Deca", "sans-serif"],
+      },
+      colors: {
+        primary: "#111111",
+        light: "#f9f9f9",
+      },
+    },
   },
-  plugins: [],
+  plugins: [
+    require("windicss/plugin/typography")({
+      dark: true,
+    }),
+  ],
 };

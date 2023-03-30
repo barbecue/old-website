@@ -44,7 +44,7 @@ if (error) {
     </div>
     <span
       v-if="!pending && !error"
-      class="title text-lg text-neutral-800 dark:text-neutral-200"
+      class="text-lg text-neutral-800 dark:text-neutral-200"
     >
       {{ data.data.discord_user.username }}#{{
         data.data.discord_user.discriminator

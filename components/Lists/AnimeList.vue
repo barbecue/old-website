@@ -23,29 +23,30 @@ if (error) {
           height="204"
           format="webp"
           quality="100"
+          loading="lazy"
           :alt="anime.animeTitle"
           class="h-52 w-36 transform select-none rounded-md transition duration-300"
           :src="`${anime.animeImagePath}`"
         ></nuxt-img>
         <div class="flex w-36 flex-col break-all">
           <span
-            class="title truncate text-center text-neutral-700 dark:text-neutral-400 md:text-left"
+            class="truncate text-center text-black dark:text-neutral-300 md:text-left"
           >
             {{ anime.animeTitle }}
           </span>
           <div class="flex flex-col space-y-0.5">
             <span
-              class="title break-keep text-center text-sm text-neutral-400 dark:text-neutral-200 md:text-left"
+              class="break-keep text-center text-sm text-neutral-500 dark:text-neutral-400 md:text-left"
             >
-              {{ anime.score }}/10 Score
+              {{ anime.score || "?" }}/10 Score
             </span>
             <span
-              class="title break-keep text-center text-sm text-neutral-400 dark:text-neutral-200 md:text-left"
+              class="break-keep text-center text-sm text-neutral-500 dark:text-neutral-400 md:text-left"
             >
               {{ anime.numWatchedEpisodes }}/{{
                 anime.animeNumEpisodes === 0 ? "?" : anime.animeNumEpisodes
               }}
-              Epsiodes Watched
+              Watched
             </span>
           </div>
         </div>
@@ -73,8 +74,9 @@ if (error) {
     </div>
     <div v-else-if="!pending && error">
       <button
-        aria-label="Refresh Anime List"
-        class="dark:Hover-bg-neutral-900 dark:hover flex flex-row items-center justify-center space-x-2.5 rounded-md bg-neutral-200 p-2 px-6 text-neutral-600 transition duration-300 hover:bg-neutral-300 hover:text-black focus:outline-none dark:bg-neutral-800 dark:text-neutral-400 dark:hover:text-white"
+        v-if="error"
+        aria-label="Refresh Song list"
+        class="mt-1 flex flex-row items-center space-x-2.5 rounded-md bg-neutral-200/50 p-2 px-4 text-neutral-500 transition duration-300 hover:bg-neutral-200 hover:text-black dark:bg-neutral-800/50 dark:text-neutral-500 dark:hover:bg-neutral-800 dark:hover:text-white"
         @click="refresh()"
       >
         <Icon

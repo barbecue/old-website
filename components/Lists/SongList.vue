@@ -21,6 +21,7 @@ if (error) {
           draggable="false"
           width="144"
           height="144"
+          loading="lazy"
           :alt="song.name"
           quality="50"
           format="webp"
@@ -29,13 +30,13 @@ if (error) {
         ></nuxt-img>
         <div class="flex w-36 flex-col break-all">
           <span
-            class="title truncate text-center text-neutral-700 dark:text-neutral-400 md:text-left"
+            class="truncate text-center text-black dark:text-neutral-400 md:text-left"
           >
             {{ song.name }}
           </span>
           <div class="flex flex-col space-y-0.5">
             <span
-              class="title w-36 truncate break-keep text-center text-sm text-neutral-400 dark:text-neutral-200 md:text-left"
+              class="w-36 truncate break-keep text-center text-sm text-neutral-500 dark:text-neutral-400 md:text-left"
             >
               {{ song.artists[0].name }}
             </span>
@@ -67,13 +68,10 @@ if (error) {
     <button
       v-if="error"
       aria-label="Refresh Song list"
-      class="dark:Hover-bg-neutral-900 dark:hover flex flex-row items-center justify-center space-x-2.5 rounded-md bg-neutral-200 p-2 px-6 text-neutral-600 transition duration-300 hover:bg-neutral-300 hover:text-black focus:outline-none dark:bg-neutral-800 dark:text-neutral-400 dark:hover:text-white"
+      class="mt-1 flex flex-row items-center space-x-2.5 rounded-md bg-neutral-200/50 p-2 px-4 text-neutral-500 transition duration-300 hover:bg-neutral-200 hover:text-black dark:bg-neutral-800/50 dark:text-neutral-500 dark:hover:bg-neutral-800 dark:hover:text-white"
       @click="refresh()"
     >
-      <Icon
-        name="ic:baseline-refresh"
-        class="h-5 w-5 transition duration-300 hover:rotate-180"
-      />
+      <Icon name="ic:baseline-refresh" class="h-5 w-5" />
       <span>Refresh</span>
     </button>
   </div>

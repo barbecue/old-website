@@ -18,11 +18,11 @@ function visible() {
     class="fixed right-0 bottom-0 z-10 p-4"
   >
     <div
-      class="flex flex-col items-start gap-2 rounded-md border border-neutral-500/20 bg-neutral-800/70 p-4"
+      class="flex flex-col items-start gap-2 rounded-md border border-neutral-500/20 bg-neutral-800/90 p-4 shadow-xl md:bg-neutral-800/70"
     >
       <div class="flex flex-row items-center justify-between gap-4">
         <span
-          class="bg-[conic-gradient(at_bottom_left,_var(--tw-gradient-stops))] from-fuchsia-300 via-green-400 to-rose-700 bg-clip-text text-lg font-semibold text-transparent"
+          class="bg-gradient-to-tr from-violet-500 to-orange-300 bg-clip-text text-lg font-semibold text-transparent"
         >
           Support this website on github!</span
         >

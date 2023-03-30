@@ -3,9 +3,7 @@
 @tailwind utilities;
 
 html, body {
-    font-family: 'Roboto Mono', sans-serif;
+    @apply font-poppins;
+    @apply dark:bg-primary;
 }
 
-.title {
-    font-family: 'Lexend Deca', 'Roboto Mono', sans-serif;
-}

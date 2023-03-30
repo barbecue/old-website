@@ -9,7 +9,7 @@ interface Data {
 
 const props = defineProps<{
   data: Data;
-  category: { type: String; required: true };
+  category: String;
 }>();
 </script>
 
@@ -17,7 +17,7 @@ const props = defineProps<{
   <nuxt-link
     :to="props.data.url"
     :target="`${props.data.external ? '_blank' : '_self'}`"
-    class="flex cursor-pointer flex-row items-center justify-start space-x-2.5 rounded-md border border-gray-300 p-2 text-white duration-300 hover:bg-gray-200 focus:outline-none dark:border-neutral-800 dark:hover:bg-neutral-900"
+    class="flex cursor-pointer flex-row items-center justify-start space-x-2.5 rounded-md border border-gray-300 p-2 text-white duration-300 hover:bg-gray-200 dark:border-neutral-800 dark:hover:bg-neutral-900"
   >
     <div
       v-if="props.data.icon"

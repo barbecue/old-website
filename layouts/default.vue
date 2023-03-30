@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-[#f9f9f9] dark:bg-[#111]">
+  <div class="dark:bg-primary bg-light">
     <NavBar />
     <SupportCard />
     <main>

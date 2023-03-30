@@ -3,7 +3,9 @@
     class="relative mx-auto flex max-w-7xl items-center justify-between px-12 py-7 md:px-24"
   >
     <div class="flex flex-row items-center justify-center space-x-5">
-      <span class="title text-4xl text-black dark:text-white">tuna.one</span>
+      <NuxtLink to="/" class="text-4xl text-black dark:text-white"
+        >tuna.one</NuxtLink
+      >
     </div>
     <div class="flex flex-row space-x-3.5">
       <button
