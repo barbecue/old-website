@@ -1,6 +1,4 @@
 export default defineNuxtLink({
-    componentName: 'Blink',
-    externalRelAttribute: '',
-    activeClass: '',
-    exactActiveClass: 'active'
-})
+  componentName: "Blink",
+  exactActiveClass: "active",
+});
