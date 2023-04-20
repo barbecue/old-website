@@ -36,7 +36,7 @@ const menu = ref(false);
         <span>{{ $colorMode.preference === "dark" ? "Light" : "Dark" }}</span>
       </button>
     </div>
-    <button class="flex md:hidden" @click="menu = !menu">
+    <button aria-label="menu-icon" class="flex md:hidden" @click="menu = !menu">
       <Icon
         class="h-6 w-6 text-lg text-neutral-500 transition duration-300 duration-300 hover:text-neutral-800 dark:hover:text-white"
         :name="
