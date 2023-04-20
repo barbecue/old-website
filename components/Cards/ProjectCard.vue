@@ -13,7 +13,7 @@ const props = defineProps<{
   <nuxt-link
     :to="props.data.url"
     :target="`${props.data.external ? '_blank' : '_self'}`"
-    class="py- flex cursor-pointer items-center rounded-md border border-gray-300 p-4 text-white duration-300 hover:bg-gray-200 dark:border-neutral-800 dark:hover:bg-neutral-900"
+    class="flex h-28 cursor-pointer items-center rounded-md border border-gray-300 p-4 text-white duration-300 hover:bg-gray-200 dark:border-neutral-800 dark:hover:bg-neutral-900"
   >
     <div class="flex flex-col space-y-1.5">
       <span class="text-lg text-black dark:text-white">
