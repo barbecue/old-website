@@ -14,20 +14,20 @@ const data = posts
       v-for="post in data"
       :key="post.title"
       :to="post._path"
-      class="mt-2 flex flex-col cursor-pointer rounded-md border-2 border-gray-300 text-white duration-300 hover:bg-gray-200 dark:border-neutral-800 dark:hover:bg-neutral-900"
+      class="mt-2 flex cursor-pointer flex-col rounded-md border-2 border-gray-300 text-white duration-300 hover:bg-gray-200 dark:border-neutral-800 dark:hover:bg-neutral-900"
     >
       <div>
         <nuxt-img
-            loading="lazy"
-            draggable="false"
-            format="webp"
-            :src="`/assets/images/blog/${post.image}`"
-            :alt="post.title"
-            class="h-56 w-full rounded-b-sm rounded-t-md border-b-2 border-gray-300 dark:border-neutral-800"
+          loading="lazy"
+          draggable="false"
+          format="webp"
+          :src="`/assets/images/blog/${post.image}`"
+          :alt="post.title"
+          class="h-56 w-full rounded-b-sm rounded-t-md border-b-2 border-gray-300 dark:border-neutral-800"
         />
       </div>
       <div
-        class="flex p-4 flex-col items-center justify-center space-y-1.5 text-center md:items-start md:justify-start md:text-left"
+        class="flex flex-col items-center justify-center space-y-1.5 p-4 text-center md:items-start md:justify-start md:text-left"
       >
         <span
           class="text-center text-black dark:text-white md:text-left md:text-lg"
