@@ -29,6 +29,7 @@ function visible() {
         >
         <button
           class="items-center text-black focus:outline-none dark:text-white"
+          aria-label="close"
           @click="disable"
         >
           <Icon name="ri:close-fill" class="h-5 w-5" />
