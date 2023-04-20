@@ -6,7 +6,7 @@ export default defineEventHandler(async (event) => {
   // Fetch all documents
   const docs = await serverQueryContent(event).find();
   const sitemap = new SitemapStream({
-    hostname: runtimeConfig.public.site_url,
+    hostname: "https://tuna.one",
   });
   sitemap.write("/");
   sitemap.write("/blog");

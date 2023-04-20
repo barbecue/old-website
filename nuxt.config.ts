@@ -152,7 +152,6 @@ export default defineNuxtConfig({
     refresh_token: process.env.REFRESH_TOKEN,
     mal_username: process.env.MAL_USERNAME,
     public: {
-      site_url: process.env.NUXT_PUBLIC_SITE_URL,
       discord_id: process.env.DISCORD_ID,
     },
   },
