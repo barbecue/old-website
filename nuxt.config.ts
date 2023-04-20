@@ -1,5 +1,4 @@
 import dotenv from "dotenv";
-import Time from "reading-time";
 dotenv.config();
 const dev = process.env.NODE_ENV !== "production";
 
@@ -15,8 +14,12 @@ export default defineNuxtConfig({
     "@nuxtjs/color-mode",
     "nuxt-windicss",
     "nuxt-icon",
+    "@vueuse/motion/nuxt",
   ],
-  plugins: ["~/plugins/tooltip"],
+  plugins: [
+    "~/plugins/tooltip",
+    { src: "~/plugins/vercel.ts", mode: "client" },
+  ],
   app: {
     head: {
       charset: "utf-8",
@@ -151,6 +154,9 @@ export default defineNuxtConfig({
     MODULE CONFIGURATIONS
   */
   content: {
+    useCache: true,
+    dir: "content",
+    liveEdit: false,
     markdown: {
       remarkPlugins: ["remark-reading-time"],
     },

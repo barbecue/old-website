@@ -6,8 +6,8 @@
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
-    "lint": "eslint .",
-    "lint:fix": "eslint ./**/**/*.vue --fix"
+    "lint": "eslint --ext .vue,.js,.ts",
+    "lint:fix": "eslint --ext .vue,.js,.ts"
   },
   "devDependencies": {
     "@nuxt/babel-preset-app": "^2.16.3",
@@ -37,6 +37,8 @@
     "vue-eslint-parser": "^9.1.0"
   },
   "dependencies": {
+    "@vercel/analytics": "^1.0.0",
+    "@vueuse/motion": "2.0.0-beta.25",
     "moment": "^2.29.4",
     "moment-timezone": "^0.5.42",
     "tailwindcss": "^3.3.0"
