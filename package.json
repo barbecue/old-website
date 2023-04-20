@@ -33,6 +33,7 @@
     "prettier": "^2.8.7",
     "prettier-plugin-tailwindcss": "^0.2.5",
     "remark-reading-time": "^2.0.1",
+    "sitemap": "^7.1.1",
     "spotify-web-api-node": "^5.0.2",
     "vue-eslint-parser": "^9.1.0"
   },
