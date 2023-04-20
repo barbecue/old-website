@@ -1,8 +1,8 @@
 ---
 title: Introducing My Blog; Development and Life
 description: Introducing my new blog focusing on development and life. Join me on this journey as I share my experiences with web development, programming languages and frameworks, and personal growth.
-thumbnail: https://i.imgur.com/iFGYAwa.jpeg
 tags: ["blogging", "web development", "self-improvement"]
+image: introducing-my-blog.webp
 createdAt: 1680162128916
 ---
 

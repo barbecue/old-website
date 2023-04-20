@@ -2,8 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
-html, body {
-    @apply font-poppins;
-    @apply dark:bg-primary;
+body {
+    @apply font-poppins bg-light dark: bg-primary
 }
 
+.active {
+    @apply text-black dark:text-white;
+}

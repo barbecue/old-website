@@ -1,5 +1,5 @@
 <template>
-  <div class="dark:bg-primary bg-light">
+  <div class="bg-light dark:bg-primary">
     <NavBar />
     <SupportCard />
     <main>
