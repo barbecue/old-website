@@ -1,5 +1,5 @@
 <script setup>
-const { data, pending, error, refresh } = useFetch(() => `/api/mal`);
+const { data, pending, error, refresh } = useLazyFetch(() => `/api/mal`);
 if (error) {
   refresh();
 }
@@ -8,7 +8,7 @@ if (error) {
   <div>
     <div
       v-if="!pending && !error"
-      class="mt-4 grid grid-cols-2 place-items-center gap-4 md:grid-cols-6 md:place-items-start md:gap-1.5"
+      class="mt-4 grid grid-cols-2 place-items-center gap-9 md:grid-cols-6 md:place-items-start md:gap-1.5"
     >
       <nuxt-link
         v-for="anime in data.data"
