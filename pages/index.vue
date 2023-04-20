@@ -187,9 +187,9 @@ const technologies = [
       class="flex flex-col items-center justify-between space-y-5 md:flex-row md:space-x-12 md:py-12 md:py-6"
     >
       <div class="flex flex-col space-y-2.5 md:py-12">
-        <span class="text-2xl text-black dark:text-white md:text-3xl">
+        <h1 class="text-2xl text-black dark:text-white md:text-3xl">
           Full-Stack web developer.
-        </span>
+        </h1>
         <p class="text-neutral-700 md:text-lg">
           Hello. My name is Tuna and I'm 17 years old. I'm interested in web
           development.
@@ -198,7 +198,7 @@ const technologies = [
       <DiscordCard />
     </div>
     <div class="py-4">
-      <span class="text-2xl text-neutral-600">Projects I am working on</span>
+      <h2 class="text-2xl text-neutral-600">Projects I am working on</h2>
       <div class="mt-4 grid grid-cols-1 gap-5 md:grid-cols-2 md:gap-4">
         <ProjectCard
           v-for="project in projects"
@@ -208,19 +208,19 @@ const technologies = [
       </div>
     </div>
     <div v-motion-slide-visible-bottom class="py-4">
-      <span class="text-2xl text-neutral-600">Recently Posted Articles</span>
+      <h2 class="text-2xl text-neutral-600">Recently Posted Articles</h2>
       <BlogList />
     </div>
     <div v-motion-slide-visible-bottom class="py-4">
-      <span class="text-2xl text-neutral-600">Recently Listened Songs</span>
+      <h2 class="text-2xl text-neutral-600">Recently Listened Songs</h2>
       <SongList />
     </div>
     <div v-motion-slide-visible-bottom class="py-4">
-      <span class="text-2xl text-neutral-600">Recently Watched Animes</span>
+      <h2 class="text-2xl text-neutral-600">Recently Watched Animes</h2>
       <AnimeList />
     </div>
     <div v-motion-slide-visible-bottom class="py-4">
-      <span class="text-2xl text-neutral-600">Technologies</span>
+      <h2 class="text-2xl text-neutral-600">Technologies</h2>
       <div
         v-for="category in technologies"
         :key="category.title.toLowerCase()"
@@ -238,7 +238,7 @@ const technologies = [
       </div>
     </div>
     <div v-motion-slide-visible-bottom class="py-4">
-      <span class="text-2xl text-neutral-600">Contact</span>
+      <h2 class="text-2xl text-neutral-600">Contact</h2>
       <div class="mt-4 grid grid-cols-1 gap-5 md:grid-cols-4 md:gap-4">
         <ContactCard
           v-for="contact in contacts"
