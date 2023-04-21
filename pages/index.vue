@@ -195,7 +195,7 @@ const technologies = [
           development.
         </p>
       </div>
-      <DiscordCard />
+      <LazyDiscordCard />
     </div>
     <div class="py-4">
       <h2 class="text-2xl text-neutral-600">Projects I am working on</h2>
@@ -209,15 +209,15 @@ const technologies = [
     </div>
     <div v-motion-slide-visible-bottom class="py-4">
       <h2 class="text-2xl text-neutral-600">Recently Posted Articles</h2>
-      <BlogList />
+      <LazyBlogList />
     </div>
     <div v-motion-slide-visible-bottom class="py-4">
       <h2 class="text-2xl text-neutral-600">Recently Listened Songs</h2>
-      <SongList />
+      <LazySongList />
     </div>
     <div v-motion-slide-visible-bottom class="py-4">
       <h2 class="text-2xl text-neutral-600">Recently Watched Animes</h2>
-      <AnimeList />
+      <LazyAnimeList />
     </div>
     <div v-motion-slide-visible-bottom class="py-4">
       <h2 class="text-2xl text-neutral-600">Technologies</h2>
