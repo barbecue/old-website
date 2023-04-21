@@ -20,7 +20,7 @@ const props = defineProps<{
         {{ props.data.title }}
       </span>
       <p
-        class="w-60 truncate text-[13px] leading-5 text-neutral-600 md:w-full md:overflow-visible md:text-clip md:whitespace-normal"
+        class="w-60 truncate text-[13px] leading-5 text-neutral-500 md:w-full md:overflow-visible md:text-clip md:whitespace-normal"
       >
         {{ props.data.description }}
       </p>

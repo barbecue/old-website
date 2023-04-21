@@ -13,12 +13,12 @@ const menu = ref(false);
     <div class="hidden flex-row items-center space-x-3.5 md:flex">
       <BLink
         to="/blog"
-        class="flex flex-row items-center justify-center space-x-1 rounded-md bg-neutral-300 px-4 py-1 text-neutral-600 transition duration-300 hover:text-black focus:outline-none dark:bg-neutral-900 dark:text-neutral-500 dark:hover:text-white"
+        class="flex flex-row items-center justify-center space-x-1 rounded-md bg-neutral-300 px-4 py-1 text-neutral-500 transition duration-300 hover:text-black focus:outline-none dark:bg-neutral-900 dark:text-neutral-500 dark:hover:text-white"
         ><Icon name="ion:newspaper-sharp"></Icon> <span>Blog</span></BLink
       >
       <button
         aria-label="theme-switch"
-        class="flex flex-row items-center justify-center space-x-1 rounded-md bg-neutral-300 px-4 py-1 text-neutral-600 transition duration-300 hover:text-black focus:outline-none dark:bg-neutral-900 dark:text-neutral-500 dark:hover:text-white"
+        class="flex flex-row items-center justify-center space-x-1 rounded-md bg-neutral-300 px-4 py-1 text-neutral-500 transition duration-300 hover:text-black focus:outline-none dark:bg-neutral-900 dark:text-neutral-500 dark:hover:text-white"
         @click="
           $colorMode.preference === 'light'
             ? ($colorMode.preference = 'dark')
@@ -49,12 +49,12 @@ const menu = ref(false);
     <div v-if="menu" class="flex flex-col gap-2 md:hidden">
       <BLink
         to="/blog"
-        class="flex flex-row items-center justify-center space-x-1 rounded-md bg-neutral-300 px-2.5 py-1 text-neutral-600 transition duration-300 hover:text-black focus:outline-none dark:bg-neutral-900 dark:text-neutral-500 dark:hover:text-white"
+        class="flex flex-row items-center justify-center space-x-1 rounded-md bg-neutral-300 px-2.5 py-1 text-neutral-500 transition duration-300 hover:text-black focus:outline-none dark:bg-neutral-900 dark:text-neutral-500 dark:hover:text-white"
         ><Icon name="ion:newspaper-sharp"></Icon> <span>Blog</span></BLink
       >
       <button
         aria-label="theme-switch"
-        class="flex flex-row items-center justify-center space-x-1 rounded-md bg-neutral-300 px-2.5 py-1 text-neutral-600 transition duration-300 hover:text-black focus:outline-none dark:bg-neutral-900 dark:text-neutral-500 dark:hover:text-white"
+        class="flex flex-row items-center justify-center space-x-1 rounded-md bg-neutral-300 px-2.5 py-1 text-neutral-500 transition duration-300 hover:text-black focus:outline-none dark:bg-neutral-900 dark:text-neutral-500 dark:hover:text-white"
         @click="
           $colorMode.preference === 'light'
             ? ($colorMode.preference = 'dark')
