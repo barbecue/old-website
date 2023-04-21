@@ -19,8 +19,8 @@ if (error) {
       >
         <nuxt-img
           draggable="false"
-          width="144"
-          height="204"
+          width="142"
+          height="200"
           format="webp"
           quality="100"
           loading="lazy"
