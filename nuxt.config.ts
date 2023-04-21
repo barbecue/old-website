@@ -1,4 +1,5 @@
 import dotenv from "dotenv";
+import dynamicRoutes from "./helpers/dynamicRoutes";
 dotenv.config();
 const dev = process.env.NODE_ENV !== "production";
 
@@ -15,6 +16,7 @@ export default defineNuxtConfig({
     "nuxt-windicss",
     "nuxt-icon",
     "@vueuse/motion/nuxt",
+    ["@funken-studio/sitemap-nuxt-3", { generateOnBuild: true }],
   ],
   plugins: [
     "~/plugins/tooltip",
@@ -138,11 +140,6 @@ export default defineNuxtConfig({
       ],
     },
   },
-  nitro: {
-    prerender: {
-      routes: ["/sitemap.xml"],
-    },
-  },
   /*
     ENVIROMENT VARIABLES
   */
@@ -164,6 +161,15 @@ export default defineNuxtConfig({
     liveEdit: false,
     markdown: {
       remarkPlugins: ["remark-reading-time"],
+    },
+  },
+  sitemap: {
+    hostname: "https://tuna.one",
+    routes: dynamicRoutes,
+    cacheTime: 1,
+    defaults: {
+      changefreq: "daily",
+      priority: 1,
     },
   },
   googleFonts: {

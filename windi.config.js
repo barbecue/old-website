@@ -22,6 +22,7 @@ module.exports = {
     },
   },
   plugins: [
+    // eslint-disable-next-line @typescript-eslint/no-var-requires
     require("windicss/plugin/typography")({
       dark: true,
     }),
