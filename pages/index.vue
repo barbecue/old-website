@@ -70,6 +70,13 @@ const contacts = [
     backgroundColor: "rgba(255,67,67,0.13)",
   },
   {
+    title: "Email",
+    url: "mailto:contact@tuna.one",
+    external: true,
+    icon: "ic:round-email",
+    backgroundColor: "rgba(255,255,255,0.13)",
+  },
+  {
     title: "Twitch",
     url: "https://twitch.tv/dkpf",
     external: true,
