@@ -213,11 +213,15 @@ const technologies = [
     </div>
     <div v-motion-slide-visible-bottom class="py-4">
       <h2 class="text-2xl text-neutral-500">Recently Listened Songs</h2>
-      <LazySongList />
+      <client-only>
+        <LazySongList />
+      </client-only>
     </div>
     <div v-motion-slide-visible-bottom class="py-4">
       <h2 class="text-2xl text-neutral-500">Recently Watched Animes</h2>
-      <LazyAnimeList />
+      <client-only>
+        <LazyAnimeList />
+      </client-only>
     </div>
     <div v-motion-slide-visible-bottom class="py-4">
       <h2 class="text-2xl text-neutral-500">Technologies</h2>
