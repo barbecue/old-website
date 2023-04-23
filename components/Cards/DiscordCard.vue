@@ -10,7 +10,7 @@ if (error) {
 
 <template>
   <div
-    class="flex w-full flex-col items-center space-y-2 rounded-md bg-neutral-200 p-5 px-32 dark:bg-neutral-900 md:w-auto"
+    class="flex w-full flex-col items-center space-y-2 rounded-md bg-neutral-200 p-5 px-32 dark:bg-neutral-900/20 md:w-auto"
   >
     <div
       v-if="!pending && !error"

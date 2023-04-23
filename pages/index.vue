@@ -183,75 +183,12 @@ const technologies = [
 
 <template>
   <div class="relative mx-auto max-w-7xl items-center px-12 md:px-24">
-    <div
-      class="flex flex-col items-center justify-between space-y-5 md:flex-row md:space-x-12 md:py-12 md:py-6"
-    >
-      <div class="flex flex-col space-y-2.5 md:py-12">
-        <h1 class="text-2xl text-black dark:text-white md:text-3xl">
-          Full-Stack web developer.
-        </h1>
-        <p class="text-neutral-700 md:text-lg">
-          Hello. My name is Tuna and I'm 17 years old. I'm interested in web
-          development.
-        </p>
-      </div>
-      <client-only>
-        <LazyDiscordCard />
-      </client-only>
-    </div>
-    <div class="py-4">
-      <h2 class="text-2xl text-neutral-500">Projects I am working on</h2>
-      <div class="mt-4 grid grid-cols-1 gap-5 md:grid-cols-2 md:gap-4">
-        <ProjectCard
-          v-for="project in projects"
-          :key="project.title"
-          :data="project"
-        />
-      </div>
-    </div>
-    <div v-motion-slide-visible-once-bottom class="py-4">
-      <h2 class="text-2xl text-neutral-500">Recently Posted Articles</h2>
-      <LazyBlogList />
-    </div>
-    <div v-motion-slide-visible-once-bottom class="py-4">
-      <h2 class="text-2xl text-neutral-500">Recently Listened Songs</h2>
-      <client-only>
-        <LazySongList />
-      </client-only>
-    </div>
-    <div v-motion-slide-visible-once-bottom class="py-4">
-      <h2 class="text-2xl text-neutral-500">Recently Watched Animes</h2>
-      <client-only>
-        <LazyAnimeList />
-      </client-only>
-    </div>
-    <div v-motion-slide-visible-once-bottom class="py-4">
-      <h2 class="text-2xl text-neutral-500">Technologies</h2>
-      <div
-        v-for="category in technologies"
-        :key="category.title.toLowerCase()"
-        class="mt-6 flex flex-col space-y-3 rounded-md"
-      >
-        <span class="text-neutral-700">{{ category.title }}</span>
-        <div class="mt-4 grid grid-cols-1 gap-5 md:grid-cols-4 md:gap-4">
-          <SkillCard
-            v-for="item in category.items"
-            :key="item.title"
-            :data="item"
-            :category="category.title.toLowerCase()"
-          />
-        </div>
-      </div>
-    </div>
-    <div v-motion-slide-visible-once-bottom class="py-4">
-      <h2 class="text-2xl text-neutral-500">Contact</h2>
-      <div class="mt-4 grid grid-cols-1 gap-5 md:grid-cols-4 md:gap-4">
-        <ContactCard
-          v-for="contact in contacts"
-          :key="contact.title"
-          :data="contact"
-        />
-      </div>
-    </div>
+    <Landing />
+    <Projects :projects="projects" />
+    <Articles />
+    <Songs />
+    <Animes />
+    <Technologies :technologies="technologies" />
+    <Contact :contacts="contacts" />
   </div>
 </template>

@@ -16,7 +16,7 @@ module.exports = {
         lexend: ["Lexend Deca", "sans-serif"],
       },
       colors: {
-        primary: "#111111",
+        primary: "#000",
         light: "#f9f9f9",
       },
     },

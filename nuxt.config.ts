@@ -5,7 +5,12 @@ const dev = process.env.NODE_ENV !== "production";
 
 export default defineNuxtConfig({
   ssr: !dev,
-  components: ["~/components", "~/components/Cards", "~/components/Lists"],
+  components: [
+    "~/components",
+    "~/components/Cards",
+    "~/components/Lists",
+    "~/components/Sections",
+  ],
   css: ["~/stylesheets/main.css"],
   modules: [
     "@nuxt/image-edge",
