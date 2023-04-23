@@ -195,7 +195,9 @@ const technologies = [
           development.
         </p>
       </div>
-      <LazyDiscordCard />
+      <client-only>
+        <LazyDiscordCard />
+      </client-only>
     </div>
     <div class="py-4">
       <h2 class="text-2xl text-neutral-500">Projects I am working on</h2>
