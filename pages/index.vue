@@ -209,23 +209,23 @@ const technologies = [
         />
       </div>
     </div>
-    <div v-motion-slide-visible-bottom class="py-4">
+    <div v-motion-slide-visible-once-bottom class="py-4">
       <h2 class="text-2xl text-neutral-500">Recently Posted Articles</h2>
       <LazyBlogList />
     </div>
-    <div v-motion-slide-visible-bottom class="py-4">
+    <div v-motion-slide-visible-once-bottom class="py-4">
       <h2 class="text-2xl text-neutral-500">Recently Listened Songs</h2>
       <client-only>
         <LazySongList />
       </client-only>
     </div>
-    <div v-motion-slide-visible-bottom class="py-4">
+    <div v-motion-slide-visible-once-bottom class="py-4">
       <h2 class="text-2xl text-neutral-500">Recently Watched Animes</h2>
       <client-only>
         <LazyAnimeList />
       </client-only>
     </div>
-    <div v-motion-slide-visible-bottom class="py-4">
+    <div v-motion-slide-visible-once-bottom class="py-4">
       <h2 class="text-2xl text-neutral-500">Technologies</h2>
       <div
         v-for="category in technologies"
@@ -243,7 +243,7 @@ const technologies = [
         </div>
       </div>
     </div>
-    <div v-motion-slide-visible-bottom class="py-4">
+    <div v-motion-slide-visible-once-bottom class="py-4">
       <h2 class="text-2xl text-neutral-500">Contact</h2>
       <div class="mt-4 grid grid-cols-1 gap-5 md:grid-cols-4 md:gap-4">
         <ContactCard
