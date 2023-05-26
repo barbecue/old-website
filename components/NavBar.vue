@@ -12,9 +12,20 @@ const menu = ref(false);
     </div>
     <div class="hidden flex-row items-center space-x-3.5 md:flex">
       <BLink
+        to="/"
+        class="flex flex-row items-center justify-center space-x-1 rounded-md bg-neutral-300 px-4 py-1 text-neutral-500 transition duration-300 hover:text-black focus:outline-none dark:bg-[#050505] dark:text-neutral-500 dark:hover:text-white"
+        ><Icon name="solar:home-2-bold-duotone"></Icon> <span>Home</span></BLink
+      >
+      <BLink
+        to="/tools"
+        class="flex flex-row items-center justify-center space-x-1 rounded-md bg-neutral-300 px-4 py-1 text-neutral-500 transition duration-300 hover:text-black focus:outline-none dark:bg-[#050505] dark:text-neutral-500 dark:hover:text-white"
+        ><Icon name="solar:sledgehammer-bold-duotone"></Icon>
+        <span>Tools</span></BLink
+      >
+      <BLink
         to="/blog"
         class="flex flex-row items-center justify-center space-x-1 rounded-md bg-neutral-300 px-4 py-1 text-neutral-500 transition duration-300 hover:text-black focus:outline-none dark:bg-[#050505] dark:text-neutral-500 dark:hover:text-white"
-        ><Icon name="ion:newspaper-sharp"></Icon> <span>Blog</span></BLink
+        ><Icon name="solar:document-bold"></Icon> <span>Blog</span></BLink
       >
       <button
         aria-label="theme-switch"
@@ -29,8 +40,8 @@ const menu = ref(false);
           class="text-lg text-neutral-500 duration-300 hover:text-neutral-800 dark:hover:text-white"
           :name="
             $colorMode.preference === 'dark'
-              ? 'material-symbols:light-mode'
-              : 'material-symbols:dark-mode'
+              ? 'solar:sun-fog-bold-duotone'
+              : 'solar:moon-fog-bold-duotone'
           "
         />
         <span>{{ $colorMode.preference === "dark" ? "Light" : "Dark" }}</span>
@@ -48,9 +59,20 @@ const menu = ref(false);
   <div class="mx-auto max-w-7xl items-center px-12 pb-4 md:px-24">
     <div v-if="menu" class="flex flex-col gap-2 md:hidden">
       <BLink
+        to="/"
+        class="flex flex-row items-center justify-center space-x-1 rounded-md bg-neutral-300 px-2.5 py-1 text-neutral-500 transition duration-300 hover:text-black focus:outline-none dark:bg-neutral-900 dark:text-neutral-500 dark:hover:text-white"
+        ><Icon name="solar:home-2-bold-duotone"></Icon> <span>Home</span></BLink
+      >
+      <BLink
+        to="/tools"
+        class="flex flex-row items-center justify-center space-x-1 rounded-md bg-neutral-300 px-2.5 py-1 text-neutral-500 transition duration-300 hover:text-black focus:outline-none dark:bg-neutral-900 dark:text-neutral-500 dark:hover:text-white"
+        ><Icon name="solar:sledgehammer-bold-duotone"></Icon>
+        <span>Tools</span></BLink
+      >
+      <BLink
         to="/blog"
         class="flex flex-row items-center justify-center space-x-1 rounded-md bg-neutral-300 px-2.5 py-1 text-neutral-500 transition duration-300 hover:text-black focus:outline-none dark:bg-neutral-900 dark:text-neutral-500 dark:hover:text-white"
-        ><Icon name="ion:newspaper-sharp"></Icon> <span>Blog</span></BLink
+        ><Icon name="solar:document-bold"></Icon> <span>Blog</span></BLink
       >
       <button
         aria-label="theme-switch"
@@ -65,8 +87,8 @@ const menu = ref(false);
           class="text-lg text-neutral-500 duration-300 hover:text-neutral-800 dark:hover:text-white"
           :name="
             $colorMode.preference === 'dark'
-              ? 'material-symbols:light-mode'
-              : 'material-symbols:dark-mode'
+              ? 'solar:sun-fog-bold-duotone'
+              : 'solar:moon-fog-bold-duotone'
           "
         />
         <span>{{ $colorMode.preference === "dark" ? "Light" : "Dark" }}</span>
