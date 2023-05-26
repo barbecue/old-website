@@ -7,7 +7,7 @@
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
     "lint": "eslint --ext .vue,.js,.ts",
-    "lint:fix": "eslint --ext .vue,.js,.ts"
+    "lint:fix": "eslint components --ext .js,.vue"
   },
   "devDependencies": {
     "@funken-studio/sitemap-nuxt-3": "^4.0.4",
@@ -19,6 +19,7 @@
     "@nuxtjs/eslint-config-typescript": "^12.0.0",
     "@nuxtjs/eslint-module": "^4.0.2",
     "@nuxtjs/google-fonts": "^3.0.0-1",
+    "@nuxtjs/partytown": "^1.3.0",
     "autoprefixer": "^10.4.14",
     "core-js": "3",
     "dotenv": "^16.0.3",
@@ -38,6 +39,7 @@
     "vue-eslint-parser": "^9.1.0"
   },
   "dependencies": {
+    "@nuxtjs/critters": "^0.4.1",
     "@vercel/analytics": "^1.0.0",
     "@vueuse/motion": "2.0.0-beta.25",
     "moment": "^2.29.4",

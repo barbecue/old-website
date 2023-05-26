@@ -13,6 +13,8 @@ export default defineNuxtConfig({
   ],
   css: ["~/stylesheets/main.css"],
   modules: [
+    "@nuxtjs/partytown",
+    "@nuxtjs/critters",
     "@nuxt/image-edge",
     "@nuxt/content",
     "@nuxtjs/eslint-module",
@@ -191,5 +193,8 @@ export default defineNuxtConfig({
     preference: "dark",
     fallback: "dark",
     classSuffix: "",
+  },
+  eslint: {
+    lintOnStart: false,
   },
 });
