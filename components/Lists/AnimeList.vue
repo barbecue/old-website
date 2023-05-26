@@ -15,7 +15,7 @@ if (error) {
         :key="anime.animeTitle"
         :to="`https://myanimelist.net/${anime.animeUrl}`"
         target="_blank"
-        class="flex cursor-pointer hover:scale-105 transform transition duration-300 flex-col justify-center space-y-2.5 text-center focus:outline-none"
+        class="flex transform cursor-pointer flex-col justify-center space-y-2.5 text-center transition duration-300 hover:scale-105 focus:outline-none"
       >
         <nuxt-img
           draggable="false"

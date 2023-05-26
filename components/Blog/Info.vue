@@ -25,7 +25,7 @@ const props = defineProps({
       <span
         v-for="tag in data.tags"
         :key="tag"
-        class="w-16 truncate rounded-md bg-neutral-300 p-1 px-2 text-[10px] text-black dark:bg-neutral-900/20 dark:text-white md:w-32"
+        class="wax-w-16 md:max-w-32 truncate rounded-md bg-neutral-300 p-1 px-2 text-[10px] text-black dark:bg-neutral-900/20 dark:text-white"
         >{{ tag }}</span
       >
     </div>

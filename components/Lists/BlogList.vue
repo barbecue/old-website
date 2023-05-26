@@ -14,7 +14,7 @@ const data = posts
       v-for="post in data"
       :key="post.title"
       :to="post._path"
-      class="mt-2 flex hover:scale-105 transform cursor-pointer flex-col rounded-md border-2 border-gray-300 text-white duration-300 hover:bg-gray-200 dark:border-neutral-800 dark:hover:bg-black"
+      class="mt-2 flex transform cursor-pointer flex-col rounded-md border-2 border-gray-300 text-white duration-300 hover:scale-105 hover:bg-gray-200 dark:border-neutral-800 dark:hover:bg-black"
     >
       <div>
         <nuxt-img
