@@ -22,6 +22,6 @@ const colors = {
   <div
     v-tooltip="Status[props.status]"
     :class="[colors[props.status], loading ? 'animate-pulse' : '']"
-    class="absolute mr-3 h-4 w-4 rounded-full border ring-4 ring-neutral-200 dark:ring-neutral-900"
+    class="absolute mr-3 h-4 w-4 rounded-full border ring-4 ring-[#f9f9f9] dark:ring-black"
   ></div>
 </template>
