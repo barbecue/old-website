@@ -1059,11 +1059,6 @@
     "@babel/helper-validator-identifier" "^7.19.1"
     to-fast-properties "^2.0.0"
 
-"@builder.io/partytown@^0.7.2":
-  version "0.7.6"
-  resolved "https://registry.yarnpkg.com/@builder.io/partytown/-/partytown-0.7.6.tgz#697acea6b552167a4dd43ddd4827018aa42e0364"
-  integrity sha512-snXIGNiZpqjno3XYQN2lbBB+05hsQR/LSttbtIW1c0gmZ7Kh/DIo0YrxlDxCDulAMFPFM8J+4voLwvYepSj3sw==
-
 "@cloudflare/kv-asset-handler@^0.3.0":
   version "0.3.0"
   resolved "https://registry.yarnpkg.com/@cloudflare/kv-asset-handler/-/kv-asset-handler-0.3.0.tgz#11f0af0749a400ddadcca16dcd6f4696d7036991"
@@ -1740,17 +1735,6 @@
     "@nuxt/kit" "^3.5.0"
     google-fonts-helper "^3.3.0"
     pathe "^1.1.0"
-
-"@nuxtjs/partytown@^1.3.0":
-  version "1.3.0"
-  resolved "https://registry.yarnpkg.com/@nuxtjs/partytown/-/partytown-1.3.0.tgz#d5058bdf744fdbc976f043792e580f4f006c54c0"
-  integrity sha512-1eO7oIV8+dMswy8s7a+01lm9kqw60eml3cSuSV+RJigOqqYYfdnswbvwuCjOlwuDsH1qtH5fFbZL7VwQYnpZ7g==
-  dependencies:
-    "@builder.io/partytown" "^0.7.2"
-    "@nuxt/kit" "^3.0.0"
-    knitwork "^1.0.0"
-    serve-static "^1.15.0"
-    ufo "^1.0.1"
 
 "@pkgr/utils@^2.3.1":
   version "2.4.1"
@@ -8941,7 +8925,7 @@ typescript@^4.9.3:
   resolved "https://registry.yarnpkg.com/typescript/-/typescript-4.9.5.tgz#095979f9bcc0d09da324d58d03ce8f8374cbe65a"
   integrity sha512-1FXk9E2Hm+QzZQ7z+McJiHL4NW1F2EzMu9Nq9i3zAaGqibafqYwCVU6WyWAuyQRRzOlxou8xZSyXLEN8oKj24g==
 
-ufo@^1.0.0, ufo@^1.0.1, ufo@^1.1.0, ufo@^1.1.1, ufo@^1.1.2:
+ufo@^1.0.0, ufo@^1.1.0, ufo@^1.1.1, ufo@^1.1.2:
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/ufo/-/ufo-1.1.2.tgz#d0d9e0fa09dece0c31ffd57bd363f030a35cfe76"
   integrity sha512-TrY6DsjTQQgyS3E3dBaOXf0TpPD8u9FVrVYmKVegJuFw51n/YB9XPt+U6ydzFG5ZIN7+DIjPbNmXoBj9esYhgQ==

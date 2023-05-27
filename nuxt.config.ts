@@ -13,7 +13,6 @@ export default defineNuxtConfig({
   ],
   css: ["~/stylesheets/main.css"],
   modules: [
-    "@nuxtjs/partytown",
     "@nuxtjs/critters",
     "@nuxt/image-edge",
     "@nuxt/content",
