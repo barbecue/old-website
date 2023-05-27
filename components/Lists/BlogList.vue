@@ -14,9 +14,9 @@ const data = posts
       v-for="post in data"
       :key="post.title"
       :to="post._path"
-      class="mt-2 flex transform cursor-pointer flex-col rounded-md border-2 border-gray-300 text-white duration-300 hover:scale-105 hover:bg-gray-200 dark:border-neutral-800 dark:hover:bg-black"
+      class="group mt-2 flex transform cursor-pointer flex-col -space-y-5 rounded-md border border-gray-300 text-white duration-300 hover:scale-105 hover:bg-gray-200 group-hover:border-white dark:border-neutral-800 dark:hover:border-neutral-900 dark:hover:bg-black"
     >
-      <div>
+      <div class="p-4">
         <nuxt-img
           loading="lazy"
           draggable="false"
@@ -26,7 +26,7 @@ const data = posts
           sizes="sm:100vw md:50vw lg:400px"
           width="290"
           height="195"
-          class="w-full rounded-b-sm rounded-t-md border-b-2 border-gray-300 dark:border-neutral-800"
+          class="w-full rounded-md transition duration-300 group-hover:border-neutral-500 dark:border-neutral-800"
         />
       </div>
       <div
