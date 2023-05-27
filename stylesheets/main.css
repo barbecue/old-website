@@ -21,3 +21,8 @@ body {
 ::-webkit-scrollbar-thumb {
     background: #333;
 }
+
+.navbar {
+    backdrop-filter: blur(4px); /* Adjust the blur value as needed */
+    -webkit-backdrop-filter: blur(4px); /* For Safari support */
+}
