@@ -24,6 +24,8 @@ const data = posts
           :src="`/assets/images/blog/${post.image}`"
           :alt="post.title"
           sizes="sm:100vw md:50vw lg:400px"
+          width="290"
+          height="195"
           class="w-full rounded-b-sm rounded-t-md border-b-2 border-gray-300 dark:border-neutral-800"
         />
       </div>
