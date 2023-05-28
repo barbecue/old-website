@@ -19,7 +19,8 @@ function visible() {
     class="fixed bottom-0 right-0 z-10 p-4"
   >
     <div
-      class="flex flex-col items-start gap-2 rounded-md border border-neutral-500/20 bg-neutral-200/80 p-4 shadow-xl dark:bg-neutral-800/90 md:bg-neutral-200/90 dark:md:bg-neutral-800/70"
+      v-motion-slide-visible-once-bottom
+      class="navbar flex flex-col items-start gap-2 rounded-md border border-neutral-500/20 p-4 shadow-xl"
     >
       <div class="flex flex-row items-center justify-between gap-4">
         <span
