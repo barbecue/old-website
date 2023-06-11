@@ -12,10 +12,7 @@ if (error) {
   <div
     class="flex w-full flex-col items-center space-y-2 rounded-md border border-neutral-200 p-5 px-32 dark:border-neutral-900 md:w-auto"
   >
-    <div
-      v-if="!pending && !error"
-      class="flex w-max items-end justify-end md:w-auto"
-    >
+    <div v-if="!pending && !error" class="flex w-max items-end justify-end">
       <nuxt-img
         v-if="data.data.discord_user.avatar"
         draggable="false"
@@ -24,14 +21,14 @@ if (error) {
         }/${data.data.discord_user.avatar}.${
           data.data.discord_user.avatar.startsWith('a_') ? 'gif' : 'webp'
         }?size=128`"
-        :alt="`${data.data.discord_user.username}#${data.data.discord_user.discriminator}`"
+        :alt="`${data.data.discord_user.username}`"
         class="relative h-24 w-24 rounded-full"
       ></nuxt-img>
       <nuxt-img
         v-else
         draggable="false"
         src="https://cdn.discordapp.com/embed/avatars/5.png"
-        :alt="`${data.data.discord_user.username}#${data.data.discord_user.discriminator}`"
+        :alt="`${data.data.discord_user.username}`"
         class="relative h-24 w-24 rounded-full"
       ></nuxt-img>
       <DiscordStatus :status="data.data.discord_status" />
@@ -46,9 +43,7 @@ if (error) {
       v-if="!pending && !error"
       class="text-lg text-neutral-800 dark:text-neutral-200"
     >
-      {{ data.data.discord_user.username }}#{{
-        data.data.discord_user.discriminator
-      }}
+      {{ data.data.discord_user.username }}
     </span>
     <div
       v-else

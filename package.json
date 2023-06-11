@@ -27,7 +27,7 @@
     "eslint-plugin-prettier": "^4.2.1",
     "floating-vue": "^2.0.0-beta.20",
     "mal-scraper": "^2.12.0",
-    "nuxt": "^3.2.2",
+    "nuxt": "^3.5.2",
     "nuxt-icon": "^0.3.3",
     "nuxt-windicss": "^2.6.0",
     "postcss": "^8.4.21",

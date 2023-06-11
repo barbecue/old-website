@@ -11,7 +11,7 @@ defineProps({
       :key="category.title.toLowerCase()"
       class="mt-6 flex flex-col space-y-3 rounded-md"
     >
-      <span class="text-neutral-700">{{ category.title }}</span>
+      <span class="text-neutral-600">{{ category.title }}</span>
       <div class="mt-4 grid grid-cols-1 gap-5 md:grid-cols-4 md:gap-4">
         <SkillCard
           v-for="item in category.items"

@@ -7,7 +7,7 @@ body {
 }
 
 .active {
-    @apply text-black dark:text-white;
+    @apply text-black dark:text-white bg-neutral-300 dark:bg-neutral-900;
 }
 
 ::-webkit-scrollbar {
