@@ -5,6 +5,16 @@ const { data } = await useAsyncData("home", () =>
 );
 useHead({
   title: data.value.title,
+  meta: [
+    {
+      name: "twitter:image",
+      content: `/assets/images/blog/${data.value.image}`,
+    },
+    {
+      name: "og:image",
+      content: `/assets/images/blog/${data.value.image}`,
+    },
+  ],
 });
 </script>
 <template>
