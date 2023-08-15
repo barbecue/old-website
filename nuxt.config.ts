@@ -11,23 +11,27 @@ export default defineNuxtConfig({
     "~/components/Lists",
     "~/components/Sections",
   ],
+  experimental: {
+    payloadExtraction: false,
+    inlineSSRStyles: false,
+    renderJsonPayloads: true,
+    typedPages: true,
+  },
   css: ["~/stylesheets/main.css"],
   modules: [
-    "@nuxtjs/critters",
+    ["@funken-studio/sitemap-nuxt-3", { generateOnBuild: true }],
     "@nuxt/image-edge",
     "@nuxt/content",
+    "@nuxtjs/critters",
     "@nuxtjs/eslint-module",
     "@nuxtjs/google-fonts",
     "@nuxtjs/color-mode",
+    "@vueuse/motion/nuxt",
+    "nuxt-vercel-analytics",
     "nuxt-windicss",
     "nuxt-icon",
-    "@vueuse/motion/nuxt",
-    ["@funken-studio/sitemap-nuxt-3", { generateOnBuild: true }],
   ],
-  plugins: [
-    "~/plugins/tooltip",
-    { src: "~/plugins/vercel.ts", mode: "client" },
-  ],
+  plugins: ["~/plugins/tooltip"],
   app: {
     head: {
       charset: "utf-8",
@@ -39,72 +43,33 @@ export default defineNuxtConfig({
       link: [
         {
           rel: "apple-touch-icon",
-          sizes: "57x57",
-          href: "/assets/images/meta/apple-icon-57x57.png",
-        },
-        {
-          rel: "apple-touch-icon",
-          sizes: "60x60",
-          href: "/assets/images/meta/apple-icon-60x60.png",
-        },
-        {
-          rel: "apple-touch-icon",
-          sizes: "72x72",
-          href: "/assets/images/meta/apple-icon-72x72.png",
-        },
-        {
-          rel: "apple-touch-icon",
-          sizes: "76x76",
-          href: "/assets/images/meta/apple-icon-76x76.png",
-        },
-        {
-          rel: "apple-touch-icon",
-          sizes: "114x114",
-          href: "/assets/images/meta/apple-icon-114x114.png",
-        },
-        {
-          rel: "apple-touch-icon",
-          sizes: "120x120",
-          href: "/assets/images/meta/apple-icon-120x120.png",
-        },
-        {
-          rel: "apple-touch-icon",
-          sizes: "144x144",
-          href: "/assets/images/meta/apple-icon-144x144.png",
-        },
-        {
-          rel: "apple-touch-icon",
-          sizes: "152x152",
-          href: "/assets/images/meta/apple-icon-152x152.png",
-        },
-        {
-          rel: "apple-touch-icon",
           sizes: "180x180",
-          href: "/assets/images/meta/apple-icon-180x180.png",
-        },
-        {
-          rel: "icon",
-          type: "image/png",
-          sizes: "192x192",
-          href: "/assets/images/meta/android-icon-192x192.png",
+          href: "/assets/images/meta/apple-touch-icon.png?v=2",
         },
         {
           rel: "icon",
           type: "image/png",
           sizes: "32x32",
-          href: "/assets/images/meta/favicon-32x32.png",
-        },
-        {
-          rel: "icon",
-          type: "image/png",
-          sizes: "96x96",
-          href: "/assets/images/meta/favicon-96x96.png",
+          href: "/assets/images/meta/favicon-32x32.png?v=2",
         },
         {
           rel: "icon",
           type: "image/png",
           sizes: "16x16",
-          href: "/assets/images/meta/favicon-16x16.png",
+          href: "/assets/images/meta/favicon-16x16.png?v=2",
+        },
+        {
+          rel: "manifest",
+          href: "/assets/images/meta/site.webmanifest?v=2",
+        },
+        {
+          rel: "mask-icon",
+          color: "#171717",
+          href: "/assets/images/meta/safari-pinned-tab.svg?v=2",
+        },
+        {
+          rel: "shortcut icon",
+          color: "/assets/images/meta/favicon.ico?v=2",
         },
       ],
       meta: [
@@ -114,7 +79,6 @@ export default defineNuxtConfig({
             "17 years old frontend & backend developer and student from Turkey.",
         },
         { name: "twitter:card", content: "summary" },
-        { name: "twitter:site", content: "@b2rbecue" },
         { name: "twitter:site", content: "@b2rbecue" },
         { name: "twitter:title", content: "tuna.one" },
         {
@@ -137,10 +101,10 @@ export default defineNuxtConfig({
           name: "og:image",
           content: "https://tuna.one/assets/images/tuna.png",
         },
-        { name: "msapplication-TileImage", content: "#171717" },
+        { name: "msapplication-TileColor", content: "#171717" },
         {
-          name: "msapplication-TileImage",
-          content: "/assets/images/meta/ms-icon-144x144.png",
+          name: "msapplication-config",
+          content: "/assets/images/meta/browserconfig.xml?v=2",
         },
         { name: "theme-color", content: "#171717" },
       ],
@@ -156,6 +120,22 @@ export default defineNuxtConfig({
     mal_username: process.env.MAL_USERNAME,
     public: {
       discord_id: process.env.DISCORD_ID,
+      motion: {
+        directives: {
+          "pop-bottom": {
+            initial: {
+              scale: 0,
+              opacity: 0,
+              y: 100,
+            },
+            visible: {
+              scale: 1,
+              opacity: 1,
+              y: 0,
+            },
+          },
+        },
+      },
     },
   },
   /*
