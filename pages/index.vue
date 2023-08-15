@@ -3,7 +3,7 @@ useHead({
   title: "Home",
 });
 
-const projects = [
+const experiences = [
   {
     title: "OdinBoost",
     url: "https://odinboost.com/",
@@ -23,19 +23,6 @@ const projects = [
     url: "https://codesty.org/",
     description:
       "Community project engaged in creating competitive atmosphere for users and servers, chosen by its newest design & powerful structure.",
-    external: true,
-  },
-  {
-    title: "Atmosfer",
-    url: "https://discord.com/invite/atmosfer",
-    description:
-      "A platform where you can get updates and news about Discord in advance.",
-    external: true,
-  },
-  {
-    title: "This Website",
-    url: "https://github.com/barbecue/website",
-    description: "Please don't forget to star!",
     external: true,
   },
 ];
@@ -191,7 +178,7 @@ const technologies = [
 <template>
   <div class="relative mx-auto max-w-7xl items-center px-12 md:px-24">
     <Landing />
-    <Projects :projects="projects" />
+    <Experiences :experiences="experiences" />
     <Articles />
     <Songs />
     <Animes />
