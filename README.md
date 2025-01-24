@@ -1,3 +1,6 @@
+# This project is outdated.
+See the new website [website](https://github.com/barbecue/website) on my profile.
+
 ## 🍖 Barbecue's Website
 
 ![Vercel](https://vercelbadge.vercel.app/api/barbecue/website) ![Discord](https://img.shields.io/discord/924819759785213953?logo=discord)
